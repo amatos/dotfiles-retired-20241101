@@ -1,0 +1,2 @@
+# dotfiles
+.here, .there, .everywhere
