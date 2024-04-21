@@ -1,0 +1,21 @@
+{{- $osid := .chezmoi.os -}}
+{{- if hasKey .chezmoi.osRelease "id" -}}
+{{-   $osid = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
+{{- end -}}
+
+progress = true
+
+[git]
+autoPush = true
+
+encryption = "gpg"
+
+[gpg]
+symmetric = true
+args = ["--batch", "--no-symkey-cache"]
+
+[data]
+{{ if lookPath "get-gpg-key" -}}
+  gpgKey = {{ output "get-gpg-key" | trim | quote }}
+{{- end }}
+osid = {{ $osid | quote }}

@@ -1,0 +1,8 @@
+# vim:set ft=gitconfig :
+
+[user]
+  name = Alberth Matos
+  email = alberth@matos.cc
+  {{ if hasKey . "gpgKey" -}}
+  signingkey = {{ .gpgKey }}
+  {{- end }}

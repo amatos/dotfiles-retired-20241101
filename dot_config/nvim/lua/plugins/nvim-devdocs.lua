@@ -1,0 +1,36 @@
+return {
+  {
+    "luckasRanarison/nvim-devdocs",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    opts = {
+      ensure_installed = {
+        "bash",
+        "bootstrap~5",
+        "css",
+        "eslint",
+        "fish~3.7",
+        "html",
+        "http",
+        "javascript",
+        "laravel~10",
+        "liquid",
+        "lodash~4",
+        "lua~5.4",
+        "markdown",
+        "nginx",
+        "node",
+        "php",
+        "postgresql~16",
+        "sass",
+        "typescript",
+        "vite",
+        "vue~3",
+        "dom",
+      },
+    },
+  },
+}
