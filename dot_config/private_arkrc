@@ -1,3 +1,7 @@
+[Extraction]
+closeAfterExtraction=true
+openDestinationFolderAfterExtraction=true
+
 [General]
 LockSidebar=true
 ShowSidebar=true

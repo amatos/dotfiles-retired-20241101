@@ -10,6 +10,7 @@ audiotube
 avahi
 base
 base-devel
+bat
 breeze-plymouth
 btop
 btrfs-progs
@@ -19,6 +20,7 @@ chezmoi
 clang
 cmake
 colord-kde
+cowsay
 cronie
 dolphin
 dolphin-plugins
@@ -31,7 +33,9 @@ filelight
 find-the-command
 firefox
 fish
+fisher
 flatpak-kcm
+fortune-mod
 fzf
 ghostwriter
 git
@@ -116,6 +120,7 @@ linux-zen-headers
 lldb
 llvm
 lokalize
+lolcat
 lsd
 lsof
 man-db
@@ -158,6 +163,7 @@ skanlite
 skanpage
 sof-firmware
 spectacle
+spotify
 starship
 sublime-text-4
 subversion

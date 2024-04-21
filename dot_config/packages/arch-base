@@ -9,6 +9,7 @@ clang
 cmake
 e2fsprogs
 fish
+fisher
 gcc
 gdb
 git
