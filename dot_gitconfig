@@ -1,7 +1,7 @@
 [user]
 	name = Alberth Cruz Matos
 	email = alberth@matos.cc
-	signingKey = 5FC8FE1141FA769594E91E48F41BDBF6171A3BB4
+	signingKey = {{ openpasswordRead "op://Personal/Personal/Identification/7uww76ovjmk4pskyfoccijyxrm" }}
 
 [alias]
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
@@ -181,10 +181,10 @@
 [init]
 	defaultBranch = main
 [credential "https://github.com"]
-	helper = 
+	helper =
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
+	helper =
 	helper = !/usr/bin/gh auth git-credential
 [tag]
 	forceSignAnnotated = true

@@ -1,0 +1,18 @@
+[Desktop Entry]
+DefaultProfile=Darkness.profile
+
+[FileLocation]
+scrollbackUseCacheLocation=true
+scrollbackUseSystemLocation=false
+
+[General]
+ConfigVersion=1
+
+[KonsoleWindow]
+RememberWindowSize=false
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[UiSettings]
+ColorScheme=
