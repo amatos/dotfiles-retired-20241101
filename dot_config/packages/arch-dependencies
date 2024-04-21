@@ -69,3 +69,10 @@ vcdimager
 xfsprogs
 hunspell-en_us
 hunspell-pt-br
+pipewire-roc
+pipewire-alsa
+pipewire-v4l2
+wlroots
+inotify-tools
+unzip
+wget
