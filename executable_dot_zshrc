@@ -69,7 +69,7 @@ for file in ~/.{aliases,exports,functions,path}; do
 done;
 unset file;
 
-# Load find-the-fish
+# Load find-the-command
 source /usr/share/doc/find-the-command/ftc.zsh
 
 # Set Firefox to use Wayland if I'm running in it

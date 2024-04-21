@@ -8,5 +8,5 @@ set -xg SHORTKEYID 0xF41BDBF6171A3BB4
 # Man pager
 set -xg MANPAGER 'less -X'
 
-set -xg EDITOR 'vi'
-set -xg VISUAL 'kate'
+set -xg EDITOR 'nvim '
+set -xg VISUAL 'kate -b '

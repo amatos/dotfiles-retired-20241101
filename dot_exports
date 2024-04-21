@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-if [ -f /usr/bin/subl ]; then
-    export EDITOR='subl -w';
-elif [ -e /usr/bin/kate ]; then
-    export EDITOR='kate -b';
+if [ -e /usr/bin/kate ]; then
+    export EDITOR='kate -b'
+    export VISUAL=$EDITOR
+elif [ -f /usr/bin/subl ]; then
+    export EDITOR='subl -w'
+    export VISUAL=$EDITOR
 elif [ -e /usr/bin/nvim ]; then
     export EDITOR='nvim';
 else
