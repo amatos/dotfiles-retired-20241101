@@ -132,6 +132,7 @@
 [diff]
 	# Detect copies as well as renames
 	renames = copies
+	guitool = kdiff3
 
 [diff "bin"]
 	# Use `hexdump` to diff binary files
@@ -147,6 +148,7 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+	tool = kdiff3
 
 [mergetool]
 	prompt = false
@@ -188,3 +190,7 @@
 	helper = !/usr/bin/gh auth git-credential
 [tag]
 	forceSignAnnotated = true
+[merge "tool"]
+	path = /usr/bin/kdiff3
+[difftool "kdiff3"]
+	path = /usr/bin/kdiff3
