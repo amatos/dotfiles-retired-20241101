@@ -1,0 +1,5 @@
+{{- if eq .osid "linux-arch" }}
+#!/usr/bin/env fish
+
+yay -Qeq >{{ joinPath .chezmoi.sourceDir "dot_config/packages" .chezmoi.hostname }}
+{{- end -}}

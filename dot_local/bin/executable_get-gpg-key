@@ -1,0 +1,11 @@
+#!/usr/bin/env fish
+
+set -f key (\
+        gpg --list-secret-keys --keyid-format SHORT\
+        | grep 'rsa4096' \
+        | sed 's/sec   rsa4096\///'\
+        | awk '{print $1}'\
+    )
+
+echo "5FC8FE1141FA769594E91E48F41BDBF6171A3BB4"
+#echo "$key"
