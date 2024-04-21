@@ -1,0 +1,6 @@
+[Unit]
+Description=Unison File Synchronization
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/unison %i
