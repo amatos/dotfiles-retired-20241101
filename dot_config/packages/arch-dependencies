@@ -76,3 +76,5 @@ wlroots
 inotify-tools
 unzip
 wget
+perl-devel-camelcadedb
+perl-bundle-camelcade
