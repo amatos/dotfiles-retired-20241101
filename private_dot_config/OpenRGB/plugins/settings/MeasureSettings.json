@@ -1,0 +1,198 @@
+[
+    {
+        "auto_start": false,
+        "brightness": 100,
+        "devices": [
+            {
+                "brightness": 100,
+                "description": "ENE SMBus Device",
+                "is_percentage_fill": false,
+                "is_segment": false,
+                "location": "I2C: /dev/i2c-10, address 0x71",
+                "name": "ENE DRAM",
+                "reverse": false,
+                "segment_idx": -1,
+                "serial": "",
+                "vendor": "ENE",
+                "version": "AUDA0-E6K5-0101",
+                "zone_idx": 0
+            },
+            {
+                "brightness": 100,
+                "description": "ENE SMBus Device",
+                "is_percentage_fill": false,
+                "is_segment": false,
+                "location": "I2C: /dev/i2c-10, address 0x72",
+                "name": "ENE DRAM",
+                "reverse": false,
+                "segment_idx": -1,
+                "serial": "",
+                "vendor": "ENE",
+                "version": "AUDA0-E6K5-0101",
+                "zone_idx": 0
+            },
+            {
+                "brightness": 100,
+                "description": "ENE SMBus Device",
+                "is_percentage_fill": false,
+                "is_segment": false,
+                "location": "I2C: /dev/i2c-10, address 0x73",
+                "name": "ENE DRAM",
+                "reverse": false,
+                "segment_idx": -1,
+                "serial": "",
+                "vendor": "ENE",
+                "version": "AUDA0-E6K5-0101",
+                "zone_idx": 0
+            },
+            {
+                "brightness": 100,
+                "description": "ASUS Aura USB Device",
+                "is_percentage_fill": false,
+                "is_segment": false,
+                "location": "HID: /dev/hidraw0",
+                "name": "ASUS ROG STRIX B550-F GAMING WIFI II",
+                "reverse": false,
+                "segment_idx": -1,
+                "serial": "9876543210",
+                "vendor": "ASUS",
+                "version": "AULA3-AR42-0222",
+                "zone_idx": 0
+            },
+            {
+                "brightness": 100,
+                "description": "ASUS Aura USB Device",
+                "is_percentage_fill": false,
+                "is_segment": false,
+                "location": "HID: /dev/hidraw0",
+                "name": "ASUS ROG STRIX B550-F GAMING WIFI II",
+                "reverse": false,
+                "segment_idx": -1,
+                "serial": "9876543210",
+                "vendor": "ASUS",
+                "version": "AULA3-AR42-0222",
+                "zone_idx": 1
+            },
+            {
+                "brightness": 100,
+                "description": "Corsair Commander Core",
+                "is_percentage_fill": false,
+                "is_segment": false,
+                "location": "HID: /dev/hidraw10",
+                "name": "Corsair Commander Core",
+                "reverse": false,
+                "segment_idx": -1,
+                "serial": "",
+                "vendor": "Corsair",
+                "version": "v2.0.19",
+                "zone_idx": 0
+            },
+            {
+                "brightness": 100,
+                "description": "Corsair Commander Core",
+                "is_percentage_fill": false,
+                "is_segment": false,
+                "location": "HID: /dev/hidraw10",
+                "name": "Corsair Commander Core",
+                "reverse": false,
+                "segment_idx": -1,
+                "serial": "",
+                "vendor": "Corsair",
+                "version": "v2.0.19",
+                "zone_idx": 1
+            },
+            {
+                "brightness": 100,
+                "description": "Corsair Commander Core",
+                "is_percentage_fill": false,
+                "is_segment": false,
+                "location": "HID: /dev/hidraw10",
+                "name": "Corsair Commander Core",
+                "reverse": false,
+                "segment_idx": -1,
+                "serial": "",
+                "vendor": "Corsair",
+                "version": "v2.0.19",
+                "zone_idx": 2
+            },
+            {
+                "brightness": 100,
+                "description": "Corsair Commander Core",
+                "is_percentage_fill": false,
+                "is_segment": false,
+                "location": "HID: /dev/hidraw10",
+                "name": "Corsair Commander Core",
+                "reverse": false,
+                "segment_idx": -1,
+                "serial": "",
+                "vendor": "Corsair",
+                "version": "v2.0.19",
+                "zone_idx": 3
+            },
+            {
+                "brightness": 100,
+                "description": "Corsair Commander Core",
+                "is_percentage_fill": false,
+                "is_segment": false,
+                "location": "HID: /dev/hidraw10",
+                "name": "Corsair Commander Core",
+                "reverse": false,
+                "segment_idx": -1,
+                "serial": "",
+                "vendor": "Corsair",
+                "version": "v2.0.19",
+                "zone_idx": 4
+            },
+            {
+                "brightness": 100,
+                "description": "Corsair Commander Core",
+                "is_percentage_fill": false,
+                "is_segment": false,
+                "location": "HID: /dev/hidraw10",
+                "name": "Corsair Commander Core",
+                "reverse": false,
+                "segment_idx": -1,
+                "serial": "",
+                "vendor": "Corsair",
+                "version": "v2.0.19",
+                "zone_idx": 5
+            },
+            {
+                "brightness": 100,
+                "description": "Corsair Commander Core",
+                "is_percentage_fill": false,
+                "is_segment": false,
+                "location": "HID: /dev/hidraw10",
+                "name": "Corsair Commander Core",
+                "reverse": false,
+                "segment_idx": -1,
+                "serial": "",
+                "vendor": "Corsair",
+                "version": "v2.0.19",
+                "zone_idx": 6
+            }
+        ],
+        "fps": 60,
+        "hardware": 3,
+        "hardware_feature": 0,
+        "measure_color": {
+            "color_stops": [
+                [
+                    0.0,
+                    65280
+                ],
+                [
+                    50.0,
+                    65535
+                ],
+                [
+                    100.0,
+                    255
+                ]
+            ]
+        },
+        "name": "Untitled",
+        "refresh_interval": 100,
+        "running": false
+    }
+]
