@@ -6,19 +6,22 @@
 progress = true
 
 [git]
-autoPush = true
-
-encryption = "gpg"
+  autoPush = true
+  encryption = "gpg"
 
 [gpg]
-symmetric = true
-args = ["--batch", "--no-symkey-cache"]
+  symmetric = true
+  args = ["--batch", "--no-symkey-cache"]
 
 [data]
-{{ if lookPath "get-gpg-key" -}}
-  gpgKey = {{ output "get-gpg-key" | trim | quote }}
-{{- end }}
-osid = {{ $osid | quote }}
+  {{ if lookPath "get-gpg-key" -}}
+    gpgKey = {{ output "get-gpg-key" | trim | quote }}
+  {{- end }}
+  osid = {{ $osid | quote }}
 
 [merge]
-command = "/usr/bin/meld"
+  command = "/usr/bin/meld"
+
+[diff]
+  pager = "diff-so-fancy"
+  command = "/usr/bin/meld"
