@@ -10,8 +10,7 @@ progress = true
   encryption = "gpg"
 
 [gpg]
-  symmetric = true
-  args = ["--batch", "--no-symkey-cache"]
+  recipient = "alberth@matos.cc"
 
 [data]
   {{ if lookPath "get-gpg-key" -}}

@@ -13,6 +13,7 @@ LongitudeAuto=-82.36
 NightTemperature=2700
 
 [Plugins]
+desktopchangeosdEnabled=true
 eyeonscreenEnabled=true
 kwin4_effect_hexagonEnabled=true
 magiclampEnabled=true
@@ -28,5 +29,5 @@ padding=4
 [Tiling][05ac8eea-8c9a-56a4-ac31-ed038ed794dd]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
-[Xwayland]
-Scale=1
+[Windows]
+RollOverDesktops=true

@@ -132,6 +132,10 @@ ForegroundNormal=35,38,41
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
+[DirSelect Dialog]
+DirSelectDialog Size=821,582
+History Items[$e]=file:///media/Games/SteamLibrary,file:///media/Games,file:$HOME/Obsidian
+
 [General]
 ColorSchemeHash=b3e34bc12d2f6584da133e558e5fb5ddfbae1540
 XftAntialias=true
@@ -145,6 +149,7 @@ toolBarFont=SF Pro Display,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [KDE]
 ScrollbarLeftClickNavigatesByPage=true
+ShowDeleteCommand=false
 
 [KFileDialog Settings]
 Allow Expansion=false
@@ -164,7 +169,14 @@ Sort directories first=true
 Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=140
-View Style=DetailTree
+View Style=Detail
+
+[KScreen]
+ScreenScaleFactors=DP-2=1;
+XwaylandClientsScale=false
+
+[PreviewSettings]
+MaximumRemoteSize=268435456
 
 [WM]
 activeBackground=227,229,231
