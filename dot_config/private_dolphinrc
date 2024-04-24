@@ -1,4 +1,11 @@
+[ContentDisplay]
+DirectorySizeCount=false
+RecursiveDirectorySizeLimit=16
+
 [General]
+AutoExpandFolders=true
+BrowseThroughArchives=true
+RememberOpenedTabs=false
 Version=202
 ViewPropsTimestamp=2024,4,21,2,45,16.94
 
@@ -9,3 +16,6 @@ Places Icons Static Size=22
 [MainWindow]
 MenuBar=Disabled
 ToolBarsMovable=Disabled
+
+[PreviewSettings]
+Plugins=audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs

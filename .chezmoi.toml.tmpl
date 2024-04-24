@@ -19,3 +19,6 @@ args = ["--batch", "--no-symkey-cache"]
   gpgKey = {{ output "get-gpg-key" | trim | quote }}
 {{- end }}
 osid = {{ $osid | quote }}
+
+[merge]
+command = "/usr/bin/meld"
