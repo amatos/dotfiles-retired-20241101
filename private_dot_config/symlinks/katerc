@@ -8,10 +8,10 @@ color5=#37d21c
 [General]
 Allow Tab Scrolling=true
 Auto Hide Tabs=false
-Close After Last=true
+Close After Last=false
 Close documents with window=true
 Days Meta Infos=30
-Diff Show Style=0
+Diff Show Style=1
 Elide Tab Text=false
 Expand Tabs=false
 Icon size for left and right sidebar buttons=32
@@ -36,7 +36,7 @@ Show text for left and right sidebar=false
 Show welcome view for new window=false
 Startup Session=manual
 Stash new unsaved files=true
-Stash unsaved file changes=false
+Stash unsaved file changes=true
 Sync section size with tab positions=true
 Tab Double Click New Document=true
 Tab Middle Click Close Document=true
@@ -158,8 +158,8 @@ Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
 [KTextEditor::Search]
-Replace History=-Suy,-Rns,
-Search History=-Rns,-Rn, ,Times
+Replace History=gammulin,{ 10.0.4.12; },10.0.4.12,-Suy,-Rns,
+Search History=apogee,subnet4,ddns,ddns-qualifying-suffix,dhcp-dns,8000,DhcpDdns,{10.0.4.12;},10.10.10.105,global ,dhcp-ddns,-Rns,-Rn, ,Times
 
 [Konsole]
 AutoSyncronize=true
@@ -170,10 +170,16 @@ RunPrefix=
 SetEditor=false
 
 [MainWindow]
-1920x1080 screen: Height=749
-1920x1080 screen: Width=1277
-3840x2160 screen: Height=1050
-3840x2160 screen: Width=1452
+1920x1080 screen: Height=1018
+1920x1080 screen: Width=1350
+3840x2160 screen: Height=1018
+3840x2160 screen: Width=1350
+
+[PluginSymbolViewer]
+ExpandTree=true
+SortSymbols=false
+TreeView=false
+ViewTypes=true
 
 [Replicode]
 replicodePath=
@@ -196,7 +202,7 @@ BlockedServerCommandLines=
 CompletionDocumentation=true
 CompletionParens=true
 Diagnostics=true
-FormatOnSave=false
+FormatOnSave=true
 HighlightGoto=true
 IncrementalSync=true
 InlayHints=false
@@ -207,7 +213,7 @@ ServerConfiguration=
 SignatureHelp=true
 SymbolDetails=false
 SymbolExpand=true
-SymbolSort=false
+SymbolSort=true
 SymbolTree=true
 TypeFormatting=false
 
@@ -215,7 +221,7 @@ TypeFormatting=false
 autorepository=git
 gitStatusDoubleClick=3
 gitStatusSingleClick=0
-index=false
+index=true
 indexDirectory=
 multiProjectCompletion=false
 multiProjectGoto=false

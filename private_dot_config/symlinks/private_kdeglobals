@@ -170,7 +170,7 @@ Sort directories first=true
 Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=140
-View Style=Detail
+View Style=Simple
 
 [KScreen]
 ScreenScaleFactors=DP-2=1;
