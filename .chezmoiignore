@@ -1,4 +1,5 @@
 README.md
+LICENSE
 tags*
 
 {{- if eq .chezmoi.hostname "marleycentre" }}
