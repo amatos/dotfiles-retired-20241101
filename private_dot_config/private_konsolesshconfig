@@ -1,12 +1,3 @@
 [Global plugin config]
 manageProfile=false
 
-[SSH Config][aur.archlinux.org]
-hostname=aur.archlinux.org
-identifier=aur.archlinux.org
-importedFromSshConfig=true
-port=
-profileName=
-sshkey=~/.ssh/aur.archlinux.pub
-useSshConfig=true
-username=aur
