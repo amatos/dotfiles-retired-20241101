@@ -1,7 +1,8 @@
 [Appearance]
 ColorScheme=cobalt2
-Font=SFMono Nerd Font Mono,14,-1,5,50,0,0,0,0,0
+Font=Liga SFMono Nerd Font,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 LineSpacing=1
+UseFontLineChararacters=false
 
 [Cursor Options]
 CursorShape=1
