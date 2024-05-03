@@ -13,7 +13,7 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 sudo dnf config-manager --enable fedora-cisco-openh264 -y
 
 # Command line tools
-sudo dnf -y install syncthing syncthing-tools git wget curl fish 1password-cli starship darkman variety fortune-mod cowsay lolcat eza btop
+sudo dnf -y install syncthing syncthing-tools git wget curl fish 1password-cli starship darkman variety fortune-mod cowsay lolcat eza btop trash-cli
 sudo dnf -y install https://github.com/twpayne/chezmoi/releases/download/v2.48.0/chezmoi-2.48.0-x86_64.rpm
 
 # GUI tools
