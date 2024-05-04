@@ -67,6 +67,12 @@ sudo dnf -y install cmake meson ninja-build go nodejs rust python perl ruby gcc 
 # Add Obsidian
 flatpak install -y --noninteractive --system md.obsidian.Obsidian
 
+# Add JetBrains tools
+flatpak install -y --noninteractive --system com.jetbrains.WebStorm
+flatpak install -y --noninteractive --system com.jetbrains.PyCharm-Professional
+flatpak install -y --noninteractive --system com.jetbrains.IntelliJ-IDEA-Ultimate
+flatpak install -y --noninteractive --system com.jetbrains.CLion
+
 # Create Obsidian directory if required
 if [ ! -e $HOME/Obsidian ]; then
     mkdir $HOME/Obsidian
