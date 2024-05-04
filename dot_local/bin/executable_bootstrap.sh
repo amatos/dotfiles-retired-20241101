@@ -62,6 +62,10 @@ sudo dnf -y install https://github.com/TheAssassin/AppImageLauncher/releases/dow
 sudo dnf -y install cmake meson ninja-build go nodejs rust python perl ruby gcc llvm clang gdb lldb cmake \
                     extra-cmake-modules kf6-ki18n-devel kf6-krunner-devel gettext xdotool kf6-kcmutils-devel \
                     meld nodejs-bash-language-server.noarch diff-so-fancy.noarch
+# Java
+sudo dnf -y install java-11-openjdk-devel.x86_64 \
+                    java-17-openjdk-devel.x86_64 \
+                    java-21-openjdk-devel.x86_64
 
 ### Flatpaks
 # Add Obsidian
