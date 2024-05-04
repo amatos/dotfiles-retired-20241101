@@ -20,6 +20,9 @@ gdb
 gettext
 git
 go
+https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
+https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
+https://github.com/twpayne/chezmoi/releases/download/v2.48.0/chezmoi-2.48.0-x86_64.rpm
 https://release.gitkraken.com/linux/gitkraken-amd64.rpm
 java-11-openjdk-devel.x86_64
 java-17-openjdk-devel.x86_64
