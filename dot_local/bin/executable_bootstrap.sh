@@ -23,5 +23,8 @@ sudo dnf -y install https://github.com/TheAssassin/AppImageLauncher/releases/dow
 # Development tools
 sudo dnf -y install cmake meson ninja-build go nodejs rust python perl ruby gcc llvm clang gdb lldb cmake extra-cmake-modules kf6-ki18n-devel kf6-krunner-devel gettext xdotool kf6-kcmutils-devel meld nodejs-bash-language-server.noarch diff-so-fancy.noarch
 
+# Flatpaks
+flatpak install -y --noninteractive md.obsidian.Obsidian
+
 # Start syncthing
 sudo systemctl enable --now syncthing@alberth
