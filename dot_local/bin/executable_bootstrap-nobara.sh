@@ -31,39 +31,21 @@ if [ ! "${STATUS}" = "active" ]; then
 fi
 
 ### Add  Packages
-# 1password
-if [ ! -e /etc/yum.repos.d/1password.repo ]; then
-    sudo dnf -y install https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
-fi
-
-# Gitkraken
-if [ ! -e /usr/bin/gitkraken ]; then
-    sudo dnf install -y https://release.gitkraken.com/linux/gitkraken-amd64.rpm
-fi
-
 # Add Starship
 yes | sudo dnf copr enable atim/starship 2>&1
+sudo dnf install -y starship
 
 # Add Steam
 sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
                     https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf config-manager --enable fedora-cisco-openh264 -y
 
-# Command line background packages
-
-# GUI packages
-sudo dnf -y install meld kget steam gamemode mangohud smplayer smb4k waydroid fontforge fontforge-doc
-
-
-# Development packages
-# Java
-sudo dnf -y install java-11-openjdk-devel.x86_64 \
-                    java-17-openjdk-devel.x86_64 \
-                    java-21-openjdk-devel.x86_64
-
-### Flatpaks
 # Add Obsidian
 flatpak install -y --noninteractive --system md.obsidian.Obsidian
+# Create Obsidian directory if required
+if [ ! -e $HOME/Obsidian ]; then
+    mkdir $HOME/Obsidian
+fi
 
 # Add JetBrains tools
 pushd ~/Downloads
@@ -71,12 +53,8 @@ curl https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-2.3.1.31116.ta
 tar xfvz jetbrains-toolbox.tar.gz
 popd
 
-# Create Obsidian directory if required
-if [ ! -e $HOME/Obsidian ]; then
-    mkdir $HOME/Obsidian
-fi
 
 ### Start systemd entries
-# Start syncthing
-sudo systemctl enable --now syncthing@alberth
 sudo systemctl enable cockpit.socket
+sudo systemctl enable --now power-dpm.service
+sudo systemctl enable --now syncthing@alberth

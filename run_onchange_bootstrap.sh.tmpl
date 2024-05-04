@@ -1,0 +1,10 @@
+#!/bin/env bash
+
+# bootstrap hash: {{ include "dot_local/bin/executable_bootstrap-nobara.sh" | sha256sum }}
+
+{{ if eq .chezmoi.os "linux" -}}
+    {{ if eq .osid "nobara" -}}
+        echo "Found Nobara Linux"
+        bash "$HOME/.local/bin/bootstrap.sh"
+    {{ end -}}
+{{ end -}}
