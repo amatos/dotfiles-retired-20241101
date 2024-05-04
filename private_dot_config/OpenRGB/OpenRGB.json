@@ -1269,7 +1269,7 @@
         ]
     },
     "UserInterface": {
-        "RunZoneChecks": true,
+        "RunZoneChecks": false,
         "exit_profile": {
             "profile_name": "",
             "set_on_exit": true

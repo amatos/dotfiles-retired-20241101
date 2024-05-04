@@ -159,7 +159,7 @@ Word Completion Remove Tail=true
 
 [KTextEditor::Search]
 Replace History=-Suy,-Rns,
-Search History=-Rns,-Rn, ,Times
+Search History=tldr,-Rns,-Rn, ,Times
 
 [Konsole]
 AutoSyncronize=true
@@ -172,8 +172,8 @@ SetEditor=false
 [MainWindow]
 1920x1080 screen: Height=749
 1920x1080 screen: Width=1277
-3840x2160 screen: Height=984
-3840x2160 screen: Width=1690
+3840x2160 screen: Height=1079
+3840x2160 screen: Width=1859
 
 [Replicode]
 replicodePath=
