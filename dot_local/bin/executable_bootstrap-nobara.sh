@@ -58,3 +58,4 @@ popd
 sudo systemctl enable cockpit.socket
 sudo systemctl enable --now power-dpm.service
 sudo systemctl enable --now syncthing@alberth
+
