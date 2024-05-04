@@ -36,9 +36,11 @@ yes | sudo dnf copr enable atim/starship 2>&1
 sudo dnf install -y starship
 
 # Add CoolerControl
-sudo dnf install dnf-plugins-core
-yes | sudo dnf copr enable codifryed/CoolerControl
-sudo dnf install -y coolercontrol
+# Breaks OpenRGB -- disabled for now
+# sudo dnf install dnf-plugins-core
+# yes | sudo dnf copr enable codifryed/CoolerControl
+# sudo dnf install -y coolercontrol
+# sudo systemctl enable --now coolercontrold
 
 # Add Steam
 sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
@@ -61,7 +63,5 @@ popd
 
 ### Start systemd entries
 sudo systemctl enable cockpit.socket
-sudo systemctl enable --now coolercontrold
-sudo systemctl enable --now power-dpm.service
 sudo systemctl enable --now syncthing@alberth
 
