@@ -24,7 +24,7 @@ else
     rm ~/power-dpm.service
 fi
 
-# Check if service i s running.  If not, enable and start it.
+# Check if service is running.  If not, enable and start it.
 STATUS="$(systemctl is-active power-dpm.service)"
 if [ ! "${STATUS}" = "active" ]; then
     sudo systemctl enable --now power-dpm.service
