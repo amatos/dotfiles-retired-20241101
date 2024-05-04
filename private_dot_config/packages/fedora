@@ -20,6 +20,7 @@ gdb
 gettext
 git
 go
+https://release.gitkraken.com/linux/gitkraken-amd64.rpm
 java-11-openjdk-devel.x86_64
 java-17-openjdk-devel.x86_64
 java-21-openjdk-devel.x86_64
@@ -27,6 +28,7 @@ kf6-kcmutils-devel
 kf6-ki18n-devel
 kf6-krunner-devel
 kget
+liquidctl
 lldb
 llvm
 lolcat
@@ -53,4 +55,3 @@ waydroid
 wget
 xdotool
 yad
-https://release.gitkraken.com/linux/gitkraken-amd64.rpm
