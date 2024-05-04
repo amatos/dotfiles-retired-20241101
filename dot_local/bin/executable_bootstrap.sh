@@ -4,7 +4,7 @@
 # https://gitlab.freedesktop.org/drm/amd/-/issues/2967
 if [ ! -e /usr/lib/systemd/system/power-dpm.service ]; then
     echo "Creating power-pdm.service"
-    sudo cat > /usr/lib/systemd/system/power-dpm.service <<EOF
+    cat > power-dpm.service <<EOF
 [Unit]
 Description=set the parameters power_dpm_force_performance_level
 
@@ -15,8 +15,9 @@ ExecStart=/bin/bash -c 'echo high > /sys/class/drm/card*/device/power_dpm_force_
 [Install]
 WantedBy=multi-user.target
 EOF
+    sudo mv power-pdm.service /usr/lib/systemd/system/power-dpm.service
+    sudo systemctl daemon-reload
 fi
-sudo systemctl daemon-reload
 
 # Check if service i s running.  If not, enable and start it.
 STATUS="$(systemctl is-active power-dpm.service)"
