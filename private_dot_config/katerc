@@ -89,11 +89,11 @@ Fallback Encoding=ISO 8859-1
 [KTextEditor Renderer]
 Animate Bracket Matching=true
 Auto Color Theme Selection=true
-Color Theme=Breeze Dark
+Color Theme=Breeze Light
 Line Height Multiplier=1
 Show Indentation Lines=true
 Show Whole Bracket Expression=false
-Text Font=Liga SFMono Nerd Font,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+Text Font=Monospace,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Word Wrap Marker=false
 
 [KTextEditor View]

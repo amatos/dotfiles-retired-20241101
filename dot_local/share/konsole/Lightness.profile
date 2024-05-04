@@ -1,6 +1,6 @@
 [Appearance]
-ColorScheme=cobalt2
-Font=Liga SFMono Nerd Font,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+ColorScheme=BlackOnWhite
+Font=SF Mono NerdFont,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 LineSpacing=1
 UseFontLineChararacters=false
 
