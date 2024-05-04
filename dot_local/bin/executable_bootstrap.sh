@@ -1,10 +1,9 @@
-#!/bin/env bash
+#!/bin/env bash -x
 
 # Fix flicker issue with Wayland>100fps
 # https://gitlab.freedesktop.org/drm/amd/-/issues/2967
-if [ ! -e /usr/lib/systemd/system/power-dpm.service ]; then
-    echo "Creating power-pdm.service"
-    cat > ~/power-dpm.service <<EOF
+echo "Creating power-pdm.service"
+cat > $HOME/power-dpm.service << 'EOF'
 [Unit]
 Description=set the parameters power_dpm_force_performance_level
 
@@ -15,8 +14,14 @@ ExecStart=/bin/bash -c 'echo high > /sys/class/drm/card*/device/power_dpm_force_
 [Install]
 WantedBy=multi-user.target
 EOF
-    sudo mv ~/power-pdm.service /usr/lib/systemd/system/power-dpm.service
+if [ ! -e /usr/lib/systemd/system/power-dpm.service ]; then
+    echo "Moving service to systemd/system"
+    sudo mv $HOME/power-dpm.service /usr/lib/systemd/system/power-dpm.service
+    echo "reloading daemons"
     sudo systemctl daemon-reload
+else
+    echo "removing service from from $HOME"
+    rm ~/power-dpm.service
 fi
 
 # Check if service i s running.  If not, enable and start it.
@@ -60,7 +65,7 @@ sudo dnf -y install cmake meson ninja-build go nodejs rust python perl ruby gcc 
 
 ### Flatpaks
 # Add Obsidian
-flatpak install -y --noninteractive md.obsidian.Obsidian
+flatpak install -y --noninteractive --system md.obsidian.Obsidian
 
 # Create Obsidian directory if required
 if [ ! -e $HOME/Obsidian ]; then
