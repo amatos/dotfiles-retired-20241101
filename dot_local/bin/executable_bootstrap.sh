@@ -17,7 +17,7 @@ sudo dnf -y install syncthing syncthing-tools git wget curl fish 1password-cli s
 sudo dnf -y install https://github.com/twpayne/chezmoi/releases/download/v2.48.0/chezmoi-2.48.0-x86_64.rpm
 
 # GUI tools
-sudo dnf -y install meld kget steam gamemode mangohud smplayer smb4k
+sudo dnf -y install meld kget steam gamemode mangohud smplayer smb4k waydroid
 sudo dnf -y install https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
 
 # Development tools
