@@ -50,16 +50,12 @@ sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-rel
 sudo dnf config-manager --enable fedora-cisco-openh264 -y
 
 # Command line background packages
-sudo dnf -y install https://github.com/twpayne/chezmoi/releases/download/v2.48.0/chezmoi-2.48.0-x86_64.rpm
 
 # GUI packages
 sudo dnf -y install meld kget steam gamemode mangohud smplayer smb4k waydroid fontforge fontforge-doc
-sudo dnf -y install https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
+
 
 # Development packages
-sudo dnf -y install cmake meson ninja-build go nodejs rust python perl ruby gcc llvm clang gdb lldb cmake \
-                    extra-cmake-modules kf6-ki18n-devel kf6-krunner-devel gettext xdotool kf6-kcmutils-devel \
-                    meld nodejs-bash-language-server.noarch diff-so-fancy.noarch
 # Java
 sudo dnf -y install java-11-openjdk-devel.x86_64 \
                     java-17-openjdk-devel.x86_64 \
