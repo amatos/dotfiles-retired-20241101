@@ -1275,10 +1275,10 @@
             "set_on_exit": true
         },
         "geometry": {
-            "height": 0,
+            "height": 814,
             "load_geometry": true,
             "save_on_exit": true,
-            "width": 0,
+            "width": 966,
             "x": 0,
             "y": 0
         },

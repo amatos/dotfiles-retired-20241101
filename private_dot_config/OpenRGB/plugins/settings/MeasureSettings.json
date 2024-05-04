@@ -106,7 +106,7 @@
                 "description": "Corsair Commander Core",
                 "is_percentage_fill": false,
                 "is_segment": false,
-                "location": "HID: /dev/hidraw10",
+                "location": "HID: /dev/hidraw11",
                 "name": "Corsair Commander Core",
                 "reverse": false,
                 "segment_idx": -1,
@@ -120,7 +120,7 @@
                 "description": "Corsair Commander Core",
                 "is_percentage_fill": false,
                 "is_segment": false,
-                "location": "HID: /dev/hidraw10",
+                "location": "HID: /dev/hidraw11",
                 "name": "Corsair Commander Core",
                 "reverse": false,
                 "segment_idx": -1,
@@ -134,7 +134,7 @@
                 "description": "Corsair Commander Core",
                 "is_percentage_fill": false,
                 "is_segment": false,
-                "location": "HID: /dev/hidraw10",
+                "location": "HID: /dev/hidraw11",
                 "name": "Corsair Commander Core",
                 "reverse": false,
                 "segment_idx": -1,
@@ -148,7 +148,7 @@
                 "description": "Corsair Commander Core",
                 "is_percentage_fill": false,
                 "is_segment": false,
-                "location": "HID: /dev/hidraw10",
+                "location": "HID: /dev/hidraw11",
                 "name": "Corsair Commander Core",
                 "reverse": false,
                 "segment_idx": -1,
@@ -162,7 +162,7 @@
                 "description": "Corsair Commander Core",
                 "is_percentage_fill": false,
                 "is_segment": false,
-                "location": "HID: /dev/hidraw10",
+                "location": "HID: /dev/hidraw11",
                 "name": "Corsair Commander Core",
                 "reverse": false,
                 "segment_idx": -1,
@@ -174,25 +174,33 @@
         ],
         "fps": 60,
         "hardware": 3,
-        "hardware_feature": 0,
+        "hardware_feature": 1,
         "measure_color": {
             "color_stops": [
                 [
-                    0.0,
+                    30.0,
+                    16711680
+                ],
+                [
+                    40.0,
                     65280
                 ],
                 [
-                    50.0,
+                    60.0,
                     65535
                 ],
                 [
-                    100.0,
+                    80.0,
                     255
+                ],
+                [
+                    90.0,
+                    16777215
                 ]
             ]
         },
         "name": "Untitled",
         "refresh_interval": 100,
-        "running": false
+        "running": true
     }
 ]
