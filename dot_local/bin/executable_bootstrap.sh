@@ -3,7 +3,7 @@
 # Fix flicker issue with Wayland>100fps
 # https://gitlab.freedesktop.org/drm/amd/-/issues/2967
 if [ ! -e /usr/lib/systemd/system/power-dpm.service ]; then
-    cat > /usr/lib/systemd/system/power-dpm.service <<EOF
+    sudo cat > /usr/lib/systemd/system/power-dpm.service <<EOF
 [Unit]
 Description=set the parameters power_dpm_force_performance_level
 
