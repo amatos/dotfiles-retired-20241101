@@ -1,0 +1,10 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/env bash
+    {{ if eq .chezmoi.os.id.like "fedora" -}}
+    echo "Fedora variant detected"
+#    $HOME/.local/bin/bootstrap.sh
+    {{ end -}}
+{{ else if eq .chezmoi.os "darwin" -}}
+#!/bin/sh
+echo "Future Darwin work"
+{{ end -}}
