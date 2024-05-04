@@ -24,9 +24,14 @@ if [ ! "${STATUS}" = "active" ]; then
 fi
 
 ### Add  Packages
-# Add 1password
+# 1password
 if [ ! -e /etc/yum.repos.d/1password.repo ]; then
     sudo dnf -y install https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
+fi
+
+# Gitkraken
+if [ ! -e /usr/bin/gitkraken ]; then
+    sudo dnf install -y https://release.gitkraken.com/linux/gitkraken-amd64.rpm
 fi
 
 # Add Starship
