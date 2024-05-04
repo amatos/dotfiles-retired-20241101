@@ -51,7 +51,7 @@ sudo dnf config-manager --enable fedora-cisco-openh264 -y
 
 # Command line background packages
 sudo dnf -y install syncthing syncthing-tools git wget curl fish 1password-cli starship darkman variety fortune-mod \
-                    cowsay lolcat eza btop trash-cli yad tldr cockpit bat
+                    cowsay lolcat eza btop trash-cli yad tldr cockpit bat liquidctl
 sudo dnf -y install https://github.com/twpayne/chezmoi/releases/download/v2.48.0/chezmoi-2.48.0-x86_64.rpm
 
 # GUI packages
@@ -72,10 +72,10 @@ sudo dnf -y install java-11-openjdk-devel.x86_64 \
 flatpak install -y --noninteractive --system md.obsidian.Obsidian
 
 # Add JetBrains tools
-flatpak install -y --noninteractive --system com.jetbrains.WebStorm
-flatpak install -y --noninteractive --system com.jetbrains.PyCharm-Professional
-flatpak install -y --noninteractive --system com.jetbrains.IntelliJ-IDEA-Ultimate
-flatpak install -y --noninteractive --system com.jetbrains.CLion
+pushd ~/Downloads
+curl https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-2.3.1.31116.tar.gz -o jetbrains-toolbox.tar.gz
+tar xfvz jetbrains-toolbox.tar.gz
+popd
 
 # Create Obsidian directory if required
 if [ ! -e $HOME/Obsidian ]; then
