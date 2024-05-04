@@ -1,9 +1,12 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/env bash
-    {{ if eq .chezmoi.os.id.like "fedora" -}}
-    echo "Fedora variant detected"
-#    $HOME/.local/bin/bootstrap.sh
-    {{ end -}}
+echo "Future Linux work"
+{{ if eq .chezmoi.osRelease.idLike "rhel centos fedora" -}}
+echo "Fedora or derivative"
+if [[ -e {{ "$HOME/.config/packages/fedora" }} ]]; then
+    sudo dnf install -y $(cat "$HOME/.config/packages/fedora")
+fi
+{{ end -}}
 {{ else if eq .chezmoi.os "darwin" -}}
 #!/bin/sh
 echo "Future Darwin work"

@@ -199,7 +199,7 @@
                 ]
             ]
         },
-        "name": "Untitled",
+        "name": "CPU Temp",
         "refresh_interval": 100,
         "running": true
     }

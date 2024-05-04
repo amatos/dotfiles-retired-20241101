@@ -1268,17 +1268,20 @@
             }
         ]
     },
+    "Theme": {
+        "theme": "auto"
+    },
     "UserInterface": {
-        "RunZoneChecks": false,
+        "RunZoneChecks": true,
         "exit_profile": {
             "profile_name": "",
             "set_on_exit": true
         },
         "geometry": {
-            "height": 814,
+            "height": 908,
             "load_geometry": true,
             "save_on_exit": true,
-            "width": 966,
+            "width": 1481,
             "x": 0,
             "y": 0
         },

@@ -172,7 +172,7 @@ SetEditor=false
 [MainWindow]
 1920x1080 screen: Height=749
 1920x1080 screen: Width=1277
-3840x2160 screen: Height=1079
+3840x2160 screen: Height=934
 3840x2160 screen: Width=1859
 
 [Replicode]
