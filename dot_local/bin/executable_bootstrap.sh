@@ -26,5 +26,9 @@ sudo dnf -y install cmake meson ninja-build go nodejs rust python perl ruby gcc 
 # Flatpaks
 flatpak install -y --noninteractive md.obsidian.Obsidian
 
+# Create Obsidian directory if required
+if [ ! -e $HOME/Obsidian ]; then
+    mkdir $HOME/Obsidian
+fi
 # Start syncthing
 sudo systemctl enable --now syncthing@alberth
