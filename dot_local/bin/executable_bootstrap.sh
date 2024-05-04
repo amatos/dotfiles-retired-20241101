@@ -1,4 +1,4 @@
-#!/bin/env bash -x
+#!/bin/env bash
 
 # Fix flicker issue with Wayland>100fps
 # https://gitlab.freedesktop.org/drm/amd/-/issues/2967
