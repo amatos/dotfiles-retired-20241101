@@ -10,7 +10,7 @@ Duration=500
 Active=true
 LatitudeAuto=41.41
 LongitudeAuto=-82.36
-NightTemperature=2700
+NightTemperature=3200
 
 [Plugins]
 desktopchangeosdEnabled=true
@@ -22,6 +22,7 @@ squashEnabled=false
 translucencyEnabled=true
 windowapertureEnabled=false
 wobblywindowsEnabled=true
+zoomEnabled=false
 
 [Tiling]
 padding=4
@@ -31,6 +32,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 
 [Tiling][92e842d7-5928-5c43-884a-4912e7cc82ed]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Wayland]
+InputMethod[$e]=/usr/share/applications/com.github.maliit.keyboard.desktop
 
 [Windows]
 RollOverDesktops=true

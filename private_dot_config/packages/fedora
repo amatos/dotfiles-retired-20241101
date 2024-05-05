@@ -1,6 +1,7 @@
 1password-cli
 bat
 btop
+certbot
 clang
 cmake
 cockpit
@@ -43,6 +44,8 @@ nodejs
 nodejs-bash-language-server.noarch
 perl
 python
+python-certbot-dns-luadns-doc
+python3-certbot-dns-luadns
 ruby
 rust
 smb4k
