@@ -30,3 +30,6 @@ popd || return
 ### Start systemd entries
 sudo systemctl enable cockpit.socket
 sudo systemctl enable --now syncthing@alberth
+
+### Run initial package install
+sudo dnf install -y '$(curl https://raw.githubusercontent.com/amatos/dotfiles/main/private_dot_config/packages/fedora-base)'
