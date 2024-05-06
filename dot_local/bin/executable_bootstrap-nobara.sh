@@ -62,6 +62,9 @@ curl https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-2.3.1.31116.ta
 tar xfvz jetbrains-toolbox.tar.gz
 popd || return
 
+# Add 1password
+sudo dnf install -y https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
+sudo dnf install -y 1password-cli
 
 ### Start systemd entries
 sudo systemctl enable cockpit.socket
