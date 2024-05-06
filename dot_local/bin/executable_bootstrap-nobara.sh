@@ -3,7 +3,7 @@
 # Fix flicker issue with Wayland>100fps
 # https://gitlab.freedesktop.org/drm/amd/-/issues/2967
 echo "Creating power-pdm.service"
-cat > $HOME/power-dpm.service << 'EOF'
+cat > "$HOME/power-dpm.service" << 'EOF'
 [Unit]
 Description=set the parameters power_dpm_force_performance_level
 
@@ -16,7 +16,7 @@ WantedBy=multi-user.target
 EOF
 if [ ! -e /usr/lib/systemd/system/power-dpm.service ]; then
     echo "Moving service to systemd/system"
-    sudo mv $HOME/power-dpm.service /usr/lib/systemd/system/power-dpm.service
+    sudo mv "$HOME/power-dpm.service" /usr/lib/systemd/system/power-dpm.service
     echo "reloading daemons"
     sudo systemctl daemon-reload
 else
@@ -36,32 +36,35 @@ yes | sudo dnf copr enable atim/starship 2>&1
 sudo dnf install -y starship
 
 # Add CoolerControl
-# Breaks OpenRGB -- disabled for now
-# sudo dnf install dnf-plugins-core
-# yes | sudo dnf copr enable codifryed/CoolerControl
-# sudo dnf install -y coolercontrol
-# sudo systemctl enable --now coolercontrold
+sudo dnf install dnf-plugins-core
+yes | sudo dnf copr enable codifryed/CoolerControl
+sudo dnf install coolercontrol
+sudo systemctl enable --now coolercontrold
+
+# Add Syncthing
+sudo dnf install -y syncthing.x86_64 syncthing-tools.x86_64
 
 # Add Steam
-sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
-                    https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-'$(rpm -E %fedora)'.noarch.rpm \
+                    https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-'$(rpm -E %fedora)'.noarch.rpm
 sudo dnf config-manager --enable fedora-cisco-openh264 -y
 
 # Add Obsidian
 flatpak install -y --noninteractive --system md.obsidian.Obsidian
 # Create Obsidian directory if required
-if [ ! -e $HOME/Obsidian ]; then
-    mkdir $HOME/Obsidian
+if [ ! -e "$HOME/Obsidian" ]; then
+    mkdir "$HOME/Obsidian"
 fi
 
 # Add JetBrains tools
-pushd ~/Downloads
+pushd ~/Downloads || exit
 curl https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-2.3.1.31116.tar.gz -o jetbrains-toolbox.tar.gz
 tar xfvz jetbrains-toolbox.tar.gz
-popd
+popd || return
 
 
 ### Start systemd entries
 sudo systemctl enable cockpit.socket
-sudo systemctl enable --now syncthing@alberth
 
+sudo systemctl enable --now power-dpm.service
+sudo systemctl enable --now syncthing@alberth
