@@ -8,7 +8,7 @@ sudo dnf install -y starship
 # Add CoolerControl
 sudo dnf install dnf-plugins-core
 yes | sudo dnf copr enable codifryed/CoolerControl
-sudo dnf install coolercontrol
+sudo dnf install -y coolercontrol
 sudo systemctl enable --now coolercontrold
 
 # Add Obsidian
