@@ -10,9 +10,9 @@
 
 {{ if eq .chezmoi.os "linux" -}}
     echo "Future Linux work"
-    {{ if eq .chezmoi.osRelease.idLike "rhel centos fedora" -}}
-    echo "Fedora or derivative"
-    sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora" }})
+    {{ if eq .osid "linux-nobara" -}}
+    echo "Nobara Linux"
+    sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-base" }})
     {{ end -}}
 {{ else if eq .chezmoi.os "darwin" -}}
     echo "Future Darwin work"
