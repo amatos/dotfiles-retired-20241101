@@ -35,6 +35,10 @@ sudo dnf install -y cockpit
 # Add Chezmoi
 sudo dnf install https://github.com/twpayne/chezmoi/releases/download/v2.48.0/chezmoi-2.48.0-x86_64.rpm
 
+# Add 1password
+sudo dnf install -y https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
+sudo dnf install -y 1password-cli
+
 ### Start systemd entries
 sudo systemctl enable cockpit.socket
 sudo systemctl enable --now syncthing@alberth
