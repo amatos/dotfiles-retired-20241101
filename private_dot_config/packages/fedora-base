@@ -19,6 +19,7 @@ go
 java-11-openjdk-devel.x86_64
 java-17-openjdk-devel.x86_64
 java-21-openjdk-devel.x86_64
+jello
 liquidctl
 lldb
 llvm
