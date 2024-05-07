@@ -14,13 +14,13 @@
     {{ if eq .osid "linux-nobara" -}}
     echo "Nobara Linux"
     sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-base" }})
-    sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-base-gui" }})
-    sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-base-gaming" }})
+    sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-gui" }})
+    sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-gaming" }})
     {{ end -}}
     {{ if eq .osid "linux-fedora" -}}
-    echo "Nobara Linux"
+    echo "Fedora Linux"
     sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-base" }})
-    sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-base-gui" }})
+    sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-gui" }})
     {{ end -}}
 
 {{ else if eq .chezmoi.os "darwin" -}}

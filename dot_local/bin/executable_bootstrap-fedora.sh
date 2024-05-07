@@ -25,18 +25,24 @@ sudo dnf install -y syncthing.x86_64 syncthing-tools.x86_64
 
 # Add JetBrains tools
 pushd ~/Downloads || exit
-curl https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-2.3.1.31116.tar.gz -o jetbrains-toolbox.tar.gz
-tar xfvz jetbrains-toolbox.tar.gz
+if [ ! -e jetbrains-toolbox.tar.gz ]; then
+    curl https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-2.3.1.31116.tar.gz -o jetbrains-toolbox.tar.gz
+    tar xfvz jetbrains-toolbox.tar.gz
+fi
 popd || return
 
 # Add Cockpit
 sudo dnf install -y cockpit
 
 # Add Chezmoi
-sudo dnf install https://github.com/twpayne/chezmoi/releases/download/v2.48.0/chezmoi-2.48.0-x86_64.rpm
+if [ ! -e /usr/bin/chezmoi ]; then
+    sudo dnf install https://github.com/twpayne/chezmoi/releases/download/v2.48.0/chezmoi-2.48.0-x86_64.rpm
+fi
 
 # Add 1password
-sudo dnf install -y https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
+if [ ! -e /usr/bin/chezmoi ]; then
+    sudo dnf install -y https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
+fi
 sudo dnf install -y 1password-cli
 
 ### Start systemd entries
