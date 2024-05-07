@@ -2,7 +2,8 @@
 #
 # If any system package files are added (i.e., something like dot_config/packages/fedora)
 # add the file has to this line like so:
-# fedora hash: {{ include "private_dot_config/packages/fedora" | sha256sum }}
+# fedora-base hash: {{ include "private_dot_config/packages/fedora-base" | sha256sum }}
+# fedora-gui hash: {{ include "private_dot_config/packages/fedora-gui" | sha256sum }}
 # arch-base hash: {{ include "private_dot_config/packages/arch-base" | sha256sum }}
 # arch-apps hash: {{ include "private_dot_config/packages/arch-apps" | sha256sum }}
 # arch-dependencies hash: {{ include "private_dot_config/packages/arch-dependencies" | sha256sum }}
