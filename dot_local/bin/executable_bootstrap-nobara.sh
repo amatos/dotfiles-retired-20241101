@@ -64,7 +64,7 @@ popd || return
 
 # Add sbctl
 if [ ! -e /usr/bin/sbctl ]; then
-    sudo dnf copr enable chenxiaolong/sbctl
+    yes | sudo dnf copr enable chenxiaolong/sbctl
     sudo dnf install -y sbctl
 fi
 
