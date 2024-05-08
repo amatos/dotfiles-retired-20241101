@@ -158,8 +158,8 @@ Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
 [KTextEditor::Search]
-Replace History=-Suy,-Rns,
-Search History=tldr,-Rns,-Rn, ,Times
+Replace History=seraphim,necronomicon,-Suy,-Rns,
+Search History=necronomicon,gammulin,cooler,liquid,cockpit,tldr,-Rns,-Rn, ,Times
 
 [Konsole]
 AutoSyncronize=true
@@ -170,10 +170,11 @@ RunPrefix=
 SetEditor=false
 
 [MainWindow]
-1920x1080 screen: Height=749
-1920x1080 screen: Width=1277
-3840x2160 screen: Height=934
-3840x2160 screen: Width=1859
+1920x1080 screen: Height=1020
+1920x1080 screen: Width=960
+1920x1080 screen: Window-Maximized=true
+3840x2160 screen: Height=1052
+3840x2160 screen: Width=2370
 
 [Replicode]
 replicodePath=

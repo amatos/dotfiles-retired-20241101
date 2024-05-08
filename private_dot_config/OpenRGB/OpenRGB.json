@@ -1269,11 +1269,20 @@
             }
         ]
     },
+    "QMKOpenRGBDevices": {
+        "devices": [
+            {
+                "name": "Keychron Keychron K8 Pro",
+                "usb_pid": "0280",
+                "usb_vid": "3434"
+            }
+        ]
+    },
     "Theme": {
         "theme": "auto"
     },
     "UserInterface": {
-        "RunZoneChecks": true,
+        "RunZoneChecks": false,
         "exit_profile": {
             "profile_name": "",
             "set_on_exit": true
