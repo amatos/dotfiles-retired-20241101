@@ -62,9 +62,21 @@ curl https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-2.3.1.31116.ta
 tar xfvz jetbrains-toolbox.tar.gz
 popd || return
 
+# Add sbctl
+if [ ! -e /usr/bin/sbctl ]; then
+    sudo dnf copr enable chenxiaolong/sbctl
+    sudo dnf install -y sbctl
+fi
+
+if [ ! -e /usr/bin/chezmoi ]; then
+    sudo dnf install https://github.com/twpayne/chezmoi/releases/download/v2.48.0/chezmoi-2.48.0-x86_64.rpm
+fi
+
 # Add 1password
-sudo dnf install -y https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
-sudo dnf install -y 1password-cli
+if [ ! -e /usr/bin/1password ]; then
+    sudo dnf install -y https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
+    sudo dnf install -y 1password-cli
+fi
 
 ### Start systemd entries
 sudo systemctl enable cockpit.socket

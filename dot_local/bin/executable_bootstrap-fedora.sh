@@ -34,16 +34,22 @@ popd || return
 # Add Cockpit
 sudo dnf install -y cockpit
 
+# Add sbctl
+if [ ! -e /usr/bin/sbctl ]; then
+    sudo dnf copr enable chenxiaolong/sbctl
+    sudo dnf install -y sbctl
+fi
+
 # Add Chezmoi
 if [ ! -e /usr/bin/chezmoi ]; then
     sudo dnf install https://github.com/twpayne/chezmoi/releases/download/v2.48.0/chezmoi-2.48.0-x86_64.rpm
 fi
 
 # Add 1password
-if [ ! -e /usr/bin/chezmoi ]; then
+if [ ! -e /usr/bin/1password ]; then
     sudo dnf install -y https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
+    sudo dnf install -y 1password-cli
 fi
-sudo dnf install -y 1password-cli
 
 ### Start systemd entries
 sudo systemctl enable cockpit.socket
