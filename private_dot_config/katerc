@@ -8,7 +8,7 @@ color5=#37d21c
 [General]
 Allow Tab Scrolling=true
 Auto Hide Tabs=false
-Close After Last=true
+Close After Last=false
 Close documents with window=true
 Days Meta Infos=30
 Diff Show Style=0

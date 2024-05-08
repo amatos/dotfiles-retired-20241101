@@ -1,6 +1,6 @@
 [
     {
-        "auto_start": false,
+        "auto_start": true,
         "brightness": 100,
         "devices": [
             {
