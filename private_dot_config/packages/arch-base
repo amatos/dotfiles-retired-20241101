@@ -5,6 +5,7 @@ base
 base-devel
 btop
 btrfs-progs
+ccache
 clang
 cmake
 e2fsprogs
@@ -50,4 +51,3 @@ texinfo
 tk
 vim
 zsh
-ccache

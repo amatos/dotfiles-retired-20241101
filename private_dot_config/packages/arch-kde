@@ -1,4 +1,5 @@
 alligator
+appmenu-gtk-module
 arianna
 ark
 audiocd-kio
@@ -45,6 +46,7 @@ kdesdk-kio
 kdesdk-thumbnailers
 kdf
 kdialog
+kdiff3
 keditbookmarks
 keysmith
 kfind
@@ -102,7 +104,5 @@ sweeper
 telly-skout
 tesseract-data-eng
 tokodon
-yakuake
 tuned-ppd
-kdiff3
-appmenu-gtk-module
+yakuake
