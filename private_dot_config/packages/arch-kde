@@ -1,9 +1,7 @@
 alligator
 appmenu-gtk-module
-arianna
 ark
 audiocd-kio
-audiotube
 breeze-plymouth
 cervisia
 colord-kde
@@ -48,7 +46,6 @@ kdf
 kdialog
 kdiff3
 keditbookmarks
-keysmith
 kfind
 kgpg
 khelpcenter
@@ -88,13 +85,11 @@ kweather
 lokalize
 markdownpart
 neochat
-okular
 okteta
+okular
 partitionmanager
 pipewire
-plasma-meta
 plasma-sdk
-plasmatube
 plymouth-kcm
 poxml
 skanlite
@@ -102,7 +97,6 @@ skanpage
 spectacle
 svgpart
 sweeper
-telly-skout
 tesseract-data-eng
 tokodon
 tuned-ppd
