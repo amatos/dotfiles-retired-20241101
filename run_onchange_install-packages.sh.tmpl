@@ -24,11 +24,19 @@
     {{ end -}}
     {{ if eq .osid "linux-arch" -}}
     echo "Arch Linux"
-    yay -Suy --needed - < .config/packages/arch-base
-    yay -Suy --needed - < .config/packages/arch-dependencies
-    yay -Suy --needed - < .config/packages/arch-apps
-    yay -Suy --needed - < .config/packages/arch-kde
+    yay -Suy --needed --noconfirm - < .config/packages/arch-base
+    yay -Suy --needed --noconfirm - < .config/packages/arch-dependencies
+    yay -Suy --needed --noconfirm - < .config/packages/arch-apps
+    yay -Suy --needed --noconfirm - < .config/packages/arch-kde
+    sudo systemctl enable --now tuned
+    sudo systemctl enable --now tuned-ppd
     {{ end -}}
+    sudo systemctl enable --now chronyd
+    sudo systemctl enable --now cockpit-socket
+    sudo systemctl enable --now sshd
+    sudo systemctl enable --now syncthing@alberth
+    sudo systemctl enable --now --user 1password
+
 {{ else if eq .chezmoi.os "darwin" -}}
     echo "Future Darwin work"
 {{ end -}}
