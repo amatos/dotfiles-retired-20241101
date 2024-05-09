@@ -36,7 +36,7 @@
     sudo systemctl enable --now sshd
     sudo systemctl enable --now syncthing@alberth
     sudo systemctl enable --now --user 1password
-
+    sudo systemctl enable --now --user darkman
 {{ else if eq .chezmoi.os "darwin" -}}
     echo "Future Darwin work"
 {{ end -}}
