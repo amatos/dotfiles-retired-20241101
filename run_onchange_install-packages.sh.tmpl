@@ -22,7 +22,11 @@
     sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-base" }})
     sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-gui" }})
     {{ end -}}
-
+    {{ if eq .osid "linux-arch" -}}
+    echo "Arch Linux"
+    yay -Suy --needed - < {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/arch-base" }}
+    yay -Suy --needed - < {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/arch-dependencies" }}
+    {{ end -}}
 {{ else if eq .chezmoi.os "darwin" -}}
     echo "Future Darwin work"
 {{ end -}}
