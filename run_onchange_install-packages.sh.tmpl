@@ -13,19 +13,21 @@
     echo "Future Linux work"
     {{ if eq .osid "linux-nobara" -}}
     echo "Nobara Linux"
-    sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-base" }})
-    sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-gui" }})
-    sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-gaming" }})
+    sudo dnf install -y $(cat .config/packages/fedora-base)
+    sudo dnf install -y $(cat .config/packages/fedora-gui)
+    sudo dnf install -y $(cat .config/packages/fedora-gaming)
     {{ end -}}
     {{ if eq .osid "linux-fedora" -}}
     echo "Fedora Linux"
-    sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-base" }})
-    sudo dnf install -y $(cat {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/fedora-gui" }})
+    sudo dnf install -y $(cat .config/packages/fedora-base)
+    sudo dnf install -y $(cat .config/packages/fedora-gui)
     {{ end -}}
     {{ if eq .osid "linux-arch" -}}
     echo "Arch Linux"
-    yay -Suy --needed - < {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/arch-base" }}
-    yay -Suy --needed - < {{ joinPath .chezmoi.sourceDir "private_dot_config/packages/arch-dependencies" }}
+    yay -Suy --needed - < .config/packages/arch-base
+    yay -Suy --needed - < .config/packages/arch-dependencies
+    yay -Suy --needed - < .config/packages/arch-apps
+    yay -Suy --needed - < .config/packages/arch-kde
     {{ end -}}
 {{ else if eq .chezmoi.os "darwin" -}}
     echo "Future Darwin work"
