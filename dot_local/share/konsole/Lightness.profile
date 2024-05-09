@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=BlackOnWhite
-Font=SF Mono NerdFont,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+Font=SFMono Nerd Font Mono,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 LineSpacing=1
 UseFontLineChararacters=false
 
