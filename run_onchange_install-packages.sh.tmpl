@@ -35,6 +35,7 @@
     {{ if eq .chezmoi.hostname "necronomicon" }}
         echo "Installing gaming bits"
         yay -Suy --needed --noconfirm - < .config/packages/arch-gaming
+        systemctl enable --now --user gamemoded
     {{ end }}
 
     echo "Enabling systemd units"

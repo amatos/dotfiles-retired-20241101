@@ -45,6 +45,7 @@ movit
 nerd-fonts-sf-mono
 nss-mdns
 ntfs-3g
+opencl-amd
 opencv
 openmp
 opentimelineio
@@ -60,7 +61,13 @@ pkgfile
 prison5
 pstoedit
 python-setuptools
+rocfft
+rocm-gdb
+rocm-language-runtime
+rocm-llvm
+rocm-opencl-runtime
 rocm-smi-lib
+rocminfo
 ruby-docs
 sane-airscan
 shellcheck
@@ -78,6 +85,10 @@ unzip
 vcdimager
 vkd3d
 wget
-wine
+wine-gecko
+wine-mono
+wine-staging
+winetricks
 wlroots
 xfsprogs
+xwaylandvideobridge
