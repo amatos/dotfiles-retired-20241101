@@ -67,6 +67,7 @@ shellcheck
 speech-dispatcher
 sshfs
 starship
+strace
 telegram-desktop
 tesseract-data-por
 ttf-mac-fonts
@@ -75,6 +76,8 @@ udftools
 unarchiver
 unzip
 vcdimager
+vkd3d
 wget
+wine
 wlroots
 xfsprogs

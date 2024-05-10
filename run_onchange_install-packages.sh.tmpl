@@ -8,7 +8,7 @@
 # arch-apps hash: {{ include "dot_config/packages/arch-apps" | sha256sum }}
 # arch-dependencies hash: {{ include "dot_config/packages/arch-dependencies" | sha256sum }}
 # arch-kde hash: {{ include "dot_config/packages/arch-kde" | sha256sum }}
-# arch-steam hash: {{ include "dot_config/packages/arch-steam" | sha256sum }}
+# arch-gaming hash: {{ include "dot_config/packages/arch-gaming" | sha256sum }}
 
 {{ if eq .chezmoi.os "linux" -}}
     echo "Future Linux work"
@@ -16,7 +16,10 @@
     echo "Nobara Linux"
     sudo dnf install -y $(cat .config/packages/fedora-base)
     sudo dnf install -y $(cat .config/packages/fedora-gui)
-    sudo dnf install -y $(cat .config/packages/fedora-gaming)
+    {{ if eq .chezmoi.hostname "necronomicon" }}
+        echo "Installing gaming bits"
+        sudo dnf install -y $(cat .config/packages/fedora-gaming)
+    {{ end }}
     {{ end -}}
     {{ if eq .osid "linux-fedora" -}}
     echo "Fedora Linux"
@@ -29,15 +32,30 @@
     yay -Suy --needed --noconfirm - < .config/packages/arch-dependencies
     yay -Suy --needed --noconfirm - < .config/packages/arch-apps
     yay -Suy --needed --noconfirm - < .config/packages/arch-kde
+    {{ if eq .chezmoi.hostname "necronomicon" }}
+        echo "Installing gaming bits"
+        yay -Suy --needed --noconfirm - < .config/packages/arch-gaming
+    {{ end }}
+
+    echo "Enabling systemd units"
+    echo "tuned"
     sudo systemctl enable --now tuned
+    echo "tunred-ppd"
     sudo systemctl enable --now tuned-ppd
     {{ end -}}
+    echo "Chronyd"
     sudo systemctl enable --now chronyd
+    echo "cockpit"
     sudo systemctl enable --now cockpit.socket
+    echo "sshd"
     sudo systemctl enable --now sshd
+    echo "syncthing"
     sudo systemctl enable --now syncthing@alberth
-    sudo systemctl enable --now --user 1password
-    sudo systemctl enable --now --user darkman
+    echo "1Password"
+    systemctl enable --now --user 1password
+    echo "Darkman"
+    systemctl enable --now --user darkman
 {{ else if eq .chezmoi.os "darwin" -}}
     echo "Future Darwin work"
 {{ end -}}
+echo "Est finis"
