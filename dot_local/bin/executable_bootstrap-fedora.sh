@@ -56,7 +56,7 @@ sudo systemctl enable cockpit.socket
 sudo systemctl enable --now syncthing@alberth
 
 ### Run initial package install
-sudo dnf install -y $(curl https://raw.githubusercontent.com/amatos/dotfiles/main/private_dot_config/packages/fedora-base)
+sudo dnf install -y $(curl https://raw.githubusercontent.com/amatos/dotfiles/main/dot_config/packages/fedora-base)
 
 ### Add my PGP key to the local keyring
 gpg --receive-key 5FC8FE1141FA769594E91E48F41BDBF6171A3BB4

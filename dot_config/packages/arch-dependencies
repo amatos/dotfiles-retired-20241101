@@ -63,6 +63,7 @@ python-setuptools
 rocm-smi-lib
 ruby-docs
 sane-airscan
+shellcheck
 speech-dispatcher
 sshfs
 starship
