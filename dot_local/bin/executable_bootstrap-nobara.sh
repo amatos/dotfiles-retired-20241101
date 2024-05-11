@@ -14,15 +14,9 @@ ExecStart=/bin/bash -c 'echo high > /sys/class/drm/card*/device/power_dpm_force_
 [Install]
 WantedBy=multi-user.target
 EOF
-if [ ! -e /usr/lib/systemd/system/power-dpm.service ]; then
-    echo "Moving service to systemd/system"
-    sudo mv "$HOME/power-dpm.service" /usr/lib/systemd/system/power-dpm.service
-    echo "reloading daemons"
-    sudo systemctl daemon-reload
-else
-    echo "removing service from from $HOME"
-    rm ~/power-dpm.service
-fi
+sudo mv "$HOME/power-dpm.service" /usr/lib/systemd/system/power-dpm.service
+systemctl daemon-reload
+systemctl enable --now power-dpm.service
 
 # Check if service is running.  If not, enable and start it.
 STATUS="$(systemctl is-active power-dpm.service)"

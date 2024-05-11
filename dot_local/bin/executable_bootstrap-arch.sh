@@ -16,6 +16,23 @@ if [ ! -e /etc/systemd/resolved.conf.d ]; then
     sudo mkdir /etc/systemd/resolved.conf.d
 fi
 
+# https://gitlab.freedesktop.org/drm/amd/-/issues/2967
+echo "Creating power-pdm.service"
+cat > "$HOME/power-dpm.service" << 'EOF'
+[Unit]
+Description=set the parameters power_dpm_force_performance_level
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'echo high > /sys/class/drm/card*/device/power_dpm_force_performance_level'
+
+[Install]
+WantedBy=multi-user.target
+EOF
+sudo mv "$HOME/power-dpm.service" /usr/lib/systemd/system/power-dpm.service
+systemctl daemon-reload
+systemctl enable --now power-dpm.service
+
 # Retrieve my PGP key
 gpg --receive-key 5FC8FE1141FA769594E91E48F41BDBF6171A3BB4
 chezmoi init http://github.com/amatos/dotfiles
