@@ -134,12 +134,13 @@ ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
 DirSelectDialog Size=838,584
-History Items[$e]=file:$HOME/Obsidian,file:///media/Games,file:$HOME/Downloads,file:///media/Games/SteamLibrary,file:$HOME/Obsidian
+History Items[$e]=file:///media/Photo Collection,file:$HOME/Obsidian,file:///media/Games,file:$HOME/Downloads,file:///media/Games/SteamLibrary,file:$HOME/Obsidian
 
 [General]
-ColorSchemeHash=cb4c6ee5cc9a59dbe09fb467a529af1bf5c55c97
-XftHintStyle=hintslight
-XftSubPixel=rgb
+ColorSchemeHash=b3e34bc12d2f6584da133e558e5fb5ddfbae1540
+XftAntialias=true
+XftHintStyle=hintfull
+XftSubPixel=bgr
 fixed=SFMono Nerd Font Mono,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 font=SF Pro Display,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 menuFont=SF Pro Display,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
