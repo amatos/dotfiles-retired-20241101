@@ -37,3 +37,6 @@ systemctl enable --now power-dpm.service
 gpg --receive-key 5FC8FE1141FA769594E91E48F41BDBF6171A3BB4
 chezmoi init http://github.com/amatos/dotfiles
 chezmoi apply
+
+# Install OBS
+flatpak install flathub com.obsproject.Studio
