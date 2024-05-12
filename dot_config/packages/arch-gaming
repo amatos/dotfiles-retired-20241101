@@ -21,3 +21,7 @@ lib32-libcurl-compat
 lib32-nss
 lib32-glu
 lib32-dbus
+libva-mesa-driver
+sndio
+v4l2loopback-dkms
+wf-recorder

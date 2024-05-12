@@ -133,8 +133,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=838,584
-History Items[$e]=file:///media/Photo Collection,file:$HOME/Obsidian,file:///media/Games,file:$HOME/Downloads,file:///media/Games/SteamLibrary,file:$HOME/Obsidian
+DirSelectDialog Size=844,584
+History Items[$e]=file:$HOME/Videos/OBS Recordings,file:$HOME/Videos/OBS Recordings,file:///media/Photo Collection,file:$HOME/Obsidian,file:///media/Games,file:$HOME/Downloads,file:///media/Games/SteamLibrary,file:$HOME/Obsidian
 
 [General]
 ColorSchemeHash=b3e34bc12d2f6584da133e558e5fb5ddfbae1540
