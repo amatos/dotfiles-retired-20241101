@@ -1,0 +1,152 @@
+{
+  "lastUpgradeScriptRun": "v9.13.0",
+  "appId": "3a51eaa9fa8a0d68825be6a38683615791ea68b5",
+  "appLocale": "en-US",
+  "appDateFormat": null,
+  "appDateTimeFormat": null,
+  "appDateWordFormat": null,
+  "appDateVerboseFormat": null,
+  "userMilestones": {
+    "installId": "fb01cb44-332e-47fc-8534-f30f9cdda036",
+    "firstAppOpen": true,
+    "completedNewUserOnboarding": true,
+    "firstRepoOpened": true,
+    "guideOpened": true,
+    "pushSomeCode": true,
+    "connectIntegration": true,
+    "firstLoginRegister": true,
+    "startATrial": true
+  },
+  "sslWhitelist": [],
+  "lastReleaseNotesDisplayed": "9.13.0",
+  "ui": {
+    "shouldShowStartupPromoModal": false
+  },
+  "aliases": {
+    "repo": {},
+    "tabs": {}
+  },
+  "windowSettings": {
+    "x": 449,
+    "y": 192,
+    "width": 1251,
+    "height": 800,
+    "fullScreen": false,
+    "maximized": false
+  },
+  "registration": {
+    "EULA": {
+      "status": "agree_verified",
+      "version": "8.3.1"
+    },
+    "status": "activated",
+    "email": "alberth@matos.cc",
+    "name": "Alberth Matos",
+    "loginType": "github",
+    "date": "2024-05-14T15:21:46.306Z"
+  },
+  "licensedFeatures": [
+    "pro",
+    "gitgui:pro",
+    "gitlens:pro",
+    "bundle:pro",
+    "gitkraken_v1:pro",
+    "suite:pro",
+    "boards:pro",
+    "timelines:pro"
+  ],
+  "userFeatures": [
+    {
+      "name": "gitkraken"
+    },
+    {
+      "name": "cli"
+    },
+    {
+      "name": "activityStatus"
+    },
+    {
+      "name": "terminalInsideRepoTab"
+    },
+    {
+      "name": "gitBash"
+    },
+    {
+      "name": "changePriceEnabled"
+    },
+    {
+      "name": "gkApi"
+    },
+    {
+      "name": "velocityInClient_9_0_0"
+    },
+    {
+      "name": "experimentalGitBinary"
+    },
+    {
+      "name": "experimentalAiCommmitMsg"
+    },
+    {
+      "name": "workspacesPRComplexity"
+    },
+    {
+      "name": "unregisteredTrials"
+    },
+    {
+      "name": "experimentalGitBinarySpawnServer961"
+    },
+    {
+      "name": "experimentalGitBinaryDefaultOn971"
+    },
+    {
+      "name": "fall23PricingPromotion"
+    },
+    {
+      "name": "goldenTicketSpecial"
+    },
+    {
+      "name": "noGlobalFocusView"
+    },
+    {
+      "name": "onboardingGuide"
+    },
+    {
+      "name": "gkDotDevAnyoneCanInvite"
+    },
+    {
+      "name": "gkDotDevShowSubscriptionPage"
+    },
+    {
+      "name": "gkDotDevCodeSuggestions"
+    },
+    {
+      "name": "gkDotDevLaunchpad"
+    }
+  ],
+  "userId": "263e2881-538a-485e-8a3d-53372850c14f",
+  "orgSettingsByOrgId": {
+    "62c0ff961da9a30051c8d6bb": {
+      "aiSettings": {
+        "enabled": true,
+        "createdAt": "2024-02-27T16:40:51.491411Z",
+        "updatedAt": "2024-02-27T16:40:51.491411Z"
+      },
+      "draftsSettings": {
+        "enabled": true,
+        "createdAt": "2024-02-27T16:40:51.492581Z",
+        "updatedAt": "2024-02-27T16:40:51.492581Z"
+      }
+    }
+  },
+  "onboardingGuideDismissed": true,
+  "commits": {
+    "maxCommitsInGraph": 2000
+  },
+  "notification": {
+    "settings": {
+      "local": {
+        "showDesktopNotifications": true
+      }
+    }
+  }
+}
