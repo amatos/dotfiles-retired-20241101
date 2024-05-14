@@ -34,6 +34,7 @@
     yay -Suy --needed --noconfirm - < .config/packages/arch-kde
     {{ if eq .chezmoi.hostname "necronomicon" }}
         echo "Installing gaming bits"
+        read
         yay -Suy --needed --noconfirm - < .config/packages/arch-gaming
         systemctl enable --now --user gamemoded
     {{ end }}
