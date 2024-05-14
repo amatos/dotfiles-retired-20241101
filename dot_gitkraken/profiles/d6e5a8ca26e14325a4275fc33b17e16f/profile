@@ -1,0 +1,47 @@
+{
+  "externalEditor": "Sublime Text",
+  "tabInfo": {
+    "permanentTabs": {
+      "PROJECTS": {
+        "selectedProject": null,
+        "closed": true
+      },
+      "FOCUS_VIEW": {
+        "closed": false,
+        "provider": null,
+        "issueTracker": null,
+        "selectedProjectId": null
+      }
+    },
+    "selectedTabId": "9974f240-66d2-4433-a1ae-ac733f4644d3",
+    "tabs": [
+      {
+        "id": "9974f240-66d2-4433-a1ae-ac733f4644d3",
+        "type": "REPO",
+        "repoName": "chezmoi",
+        "repoPath": "/home/alberth/.local/share/chezmoi/"
+      }
+    ]
+  },
+  "editor": {
+    "fontFamily": "Consolas"
+  },
+  "cli": {
+    "fontFamily": "Consolas"
+  },
+  "organizationId": "62c0ff961da9a30051c8d6bb",
+  "projects": {},
+  "profileIcon": "gravatar",
+  "profileName": "Default Profile",
+  "userEmail": "alberth@matos.cc",
+  "userName": "Alberth Matos",
+  "defaultTerminal": "konsole",
+  "ui": {
+    "theme": "SYNC_WITH_SYSTEM"
+  },
+  "gpg": {
+    "userSigningKey": "5FC8FE1141FA769594E91E48F41BDBF6171A3BB4",
+    "commitGpgSign": true,
+    "tagForceSignAnnotated": true
+  }
+}
