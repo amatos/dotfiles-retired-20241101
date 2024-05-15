@@ -13,11 +13,13 @@ LongitudeAuto=-82.36
 NightTemperature=2600
 
 [Plugins]
+cubeEnabled=true
 desktopchangeosdEnabled=true
 eyeonscreenEnabled=true
 kwin4_effect_hexagonEnabled=true
 magiclampEnabled=true
 scaleEnabled=false
+sheetEnabled=true
 squashEnabled=false
 translucencyEnabled=true
 windowapertureEnabled=false
