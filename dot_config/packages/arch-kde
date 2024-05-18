@@ -6,6 +6,8 @@ breeze-plymouth
 cervisia
 colord-kde
 cronie
+cups
+cups-pk-helper
 dolphin
 dolphin-plugins
 dragon
@@ -92,11 +94,13 @@ pipewire
 plasma-sdk
 plymouth-kcm
 poxml
+print-manager
 skanlite
 skanpage
 spectacle
 svgpart
 sweeper
+system-config-printer
 tesseract-data-eng
 tokodon
 tuned-ppd
