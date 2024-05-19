@@ -40,9 +40,6 @@ jdk21-openjdk
 jfsutils
 jsoncpp-doc
 lazygit
-linux-headers
-linux-zen
-linux-zen-headers
 lldb
 llvm
 man-db

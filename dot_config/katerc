@@ -11,7 +11,7 @@ Auto Hide Tabs=false
 Close After Last=false
 Close documents with window=true
 Days Meta Infos=30
-Diff Show Style=0
+Diff Show Style=1
 Elide Tab Text=false
 Expand Tabs=false
 Icon size for left and right sidebar buttons=32
@@ -36,7 +36,7 @@ Show text for left and right sidebar=false
 Show welcome view for new window=false
 Startup Session=manual
 Stash new unsaved files=true
-Stash unsaved file changes=false
+Stash unsaved file changes=true
 Sync section size with tab positions=true
 Tab Double Click New Document=true
 Tab Middle Click Close Document=true
@@ -90,10 +90,10 @@ Fallback Encoding=ISO 8859-1
 Animate Bracket Matching=true
 Auto Color Theme Selection=true
 Color Theme=Breeze Dark
-Line Height Multiplier=1
+Line Height Multiplier=1.1
 Show Indentation Lines=true
 Show Whole Bracket Expression=false
-Text Font=Monospace,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+Text Font=SF Mono,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Word Wrap Marker=false
 
 [KTextEditor View]
@@ -158,8 +158,8 @@ Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
 [KTextEditor::Search]
-Replace History=seraphim,necronomicon,-Suy,-Rns,
-Search History=necronomicon,gammulin,cooler,liquid,cockpit,tldr,-Rns,-Rn, ,Times
+Replace History=gammulin,{ 10.0.4.12; },10.0.4.12,-Suy,-Rns,
+Search History=apogee,subnet4,ddns,ddns-qualifying-suffix,dhcp-dns,8000,DhcpDdns,{10.0.4.12;},10.10.10.105,global ,dhcp-ddns,-Rns,-Rn, ,Times
 
 [Konsole]
 AutoSyncronize=true
@@ -170,11 +170,16 @@ RunPrefix=
 SetEditor=false
 
 [MainWindow]
-1920x1080 screen: Height=1020
-1920x1080 screen: Width=960
-1920x1080 screen: Window-Maximized=true
-3840x2160 screen: Height=1052
-3840x2160 screen: Width=2370
+1920x1080 screen: Height=1018
+1920x1080 screen: Width=1350
+3840x2160 screen: Height=561
+3840x2160 screen: Width=2450
+
+[PluginSymbolViewer]
+ExpandTree=true
+SortSymbols=false
+TreeView=false
+ViewTypes=true
 
 [Replicode]
 replicodePath=
@@ -190,14 +195,14 @@ sortRole=0
 viewShade=211,190,222
 
 [lspclient]
-AllowedServerCommandLines=/usr/bin/bash-language-server start,/usr/bin/nc 127.0.0.1 6005
+AllowedServerCommandLines=
 AutoHover=true
 AutoImport=true
 BlockedServerCommandLines=
 CompletionDocumentation=true
 CompletionParens=true
 Diagnostics=true
-FormatOnSave=false
+FormatOnSave=true
 HighlightGoto=true
 IncrementalSync=true
 InlayHints=false
@@ -208,7 +213,7 @@ ServerConfiguration=
 SignatureHelp=true
 SymbolDetails=false
 SymbolExpand=true
-SymbolSort=false
+SymbolSort=true
 SymbolTree=true
 TypeFormatting=false
 
@@ -216,7 +221,7 @@ TypeFormatting=false
 autorepository=git
 gitStatusDoubleClick=3
 gitStatusSingleClick=0
-index=false
+index=true
 indexDirectory=
 multiProjectCompletion=false
 multiProjectGoto=false
