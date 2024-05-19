@@ -137,7 +137,7 @@ DirSelectDialog Size=844,584
 History Items[$e]=file:$HOME/server_configs,file:$HOME/server_configs,file:$HOME/server_configs,file:$HOME/Videos/OBS Recordings,file:$HOME/Videos/OBS Recordings,file:///media/Photo Collection,file:$HOME/Obsidian,file:///media/Games,file:$HOME/Downloads,file:///media/Games/SteamLibrary,file:$HOME/Obsidian
 
 [General]
-ColorSchemeHash=b3e34bc12d2f6584da133e558e5fb5ddfbae1540
+ColorSchemeHash=cb4c6ee5cc9a59dbe09fb467a529af1bf5c55c97
 XftAntialias=true
 XftHintStyle=hintfull
 XftSubPixel=bgr

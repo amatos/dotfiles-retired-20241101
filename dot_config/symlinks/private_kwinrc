@@ -10,7 +10,7 @@ Duration=500
 Active=true
 LatitudeAuto=41.41
 LongitudeAuto=-82.36
-NightTemperature=2600
+NightTemperature=3200
 
 [Plugins]
 cubeEnabled=true
