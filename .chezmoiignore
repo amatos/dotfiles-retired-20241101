@@ -1,24 +1,7 @@
 README.md
 LICENSE
 tags*
-
-{{- if eq .chezmoi.hostname "marleycentre" }}
-.config/composer
-.config/firefox
-.config/gtk-3.0
-.config/gtk-4.0
-.config/transmission
-.config/zathura
-.icons
-.config/fish/conf.d/30-gtk.fish
-.config/fish/conf.d/30-qt.fish
-{{- end }}
-
-{{- if ne .chezmoi.os "linux" }}
-.config/fish/conf.d/30-journalctl.fish
-.config/fish/conf.d/30-systemctl.fish
-.icons
-{{- end }}
+**/*.src.ini
 
 {{- if ne .osid "linux-arch" }}
 .config/packages/arch*
