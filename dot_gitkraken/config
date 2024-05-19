@@ -1,5 +1,5 @@
 {
-  "lastUpgradeScriptRun": "v9.13.0",
+  "lastUpgradeScriptRun": "v10.0.0",
   "appId": "3a51eaa9fa8a0d68825be6a38683615791ea68b5",
   "appLocale": "en-US",
   "appDateFormat": null,
@@ -15,10 +15,11 @@
     "pushSomeCode": true,
     "connectIntegration": true,
     "firstLoginRegister": true,
-    "startATrial": true
+    "startATrial": true,
+    "createACommit": true
   },
   "sslWhitelist": [],
-  "lastReleaseNotesDisplayed": "9.13.0",
+  "lastReleaseNotesDisplayed": "10.0.0",
   "ui": {
     "shouldShowStartupPromoModal": false
   },
@@ -27,8 +28,8 @@
     "tabs": {}
   },
   "windowSettings": {
-    "x": 449,
-    "y": 192,
+    "x": 450,
+    "y": 228,
     "width": 1251,
     "height": 800,
     "fullScreen": false,
@@ -146,6 +147,34 @@
     "settings": {
       "local": {
         "showDesktopNotifications": true
+      }
+    }
+  },
+  "fuzzyFinderMetadata": {
+    "itemMetadata": {
+      "OPEN_REPO": {
+        "openRepo-/home/alberth/src/robot-recall": {
+          "id": "openRepo-/home/alberth/src/robot-recall",
+          "timestamps": [
+            1715709898109,
+            1715710062708
+          ],
+          "total": 2
+        },
+        "openRepo-/home/alberth/src/dns-matos-cc": {
+          "id": "openRepo-/home/alberth/src/dns-matos-cc",
+          "timestamps": [
+            1715709912407
+          ],
+          "total": 1
+        },
+        "openRepo-/home/alberth/server_configs": {
+          "id": "openRepo-/home/alberth/server_configs",
+          "timestamps": [
+            1715709956786
+          ],
+          "total": 1
+        }
       }
     }
   }

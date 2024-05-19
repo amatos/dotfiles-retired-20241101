@@ -7,19 +7,38 @@
         "closed": true
       },
       "FOCUS_VIEW": {
-        "closed": false,
-        "provider": null,
-        "issueTracker": null,
-        "selectedProjectId": null
-      }
+        "closed": false
+      },
+      "REPO_MANAGEMENT": {}
     },
-    "selectedTabId": "9974f240-66d2-4433-a1ae-ac733f4644d3",
+    "selectedTabId": "2febd00d-9933-4473-a51d-516aa554e5a0",
     "tabs": [
       {
         "id": "9974f240-66d2-4433-a1ae-ac733f4644d3",
         "type": "REPO",
         "repoName": "chezmoi",
         "repoPath": "/home/alberth/.local/share/chezmoi/"
+      },
+      {
+        "id": "2febd00d-9933-4473-a51d-516aa554e5a0",
+        "type": "REPO",
+        "repoName": "robot-recall",
+        "repoPath": "/home/alberth/src/robot-recall/",
+        "skipWSLChecks": false
+      },
+      {
+        "id": "0b6bba91-4399-4e8d-81a3-3211bc5d5ba6",
+        "type": "REPO",
+        "repoName": "dns-matos-cc",
+        "repoPath": "/home/alberth/src/dns-matos-cc/",
+        "skipWSLChecks": false
+      },
+      {
+        "id": "9305d7ea-ce21-44f5-95af-5493b18b363a",
+        "type": "REPO",
+        "repoName": "server_configs",
+        "repoPath": "/home/alberth/server_configs/",
+        "skipWSLChecks": false
       }
     ]
   },
@@ -37,11 +56,54 @@
   "userName": "Alberth Matos",
   "defaultTerminal": "konsole",
   "ui": {
-    "theme": "SYNC_WITH_SYSTEM"
+    "theme": "SYNC_WITH_SYSTEM",
+    "repoManagementTab": {
+      "collapsedSections": {
+        "ALL_REPOS_SECTION": false
+      }
+    }
   },
   "gpg": {
     "userSigningKey": "5FC8FE1141FA769594E91E48F41BDBF6171A3BB4",
     "commitGpgSign": true,
     "tagForceSignAnnotated": true
+  },
+  "focusView": {
+    "provider": "github",
+    "issueTracker": {
+      "provider": "github",
+      "settings": {
+        "azureOrganizationId": null,
+        "azureProject": null,
+        "jiraProjectId": null,
+        "jiraResourceId": null,
+        "repoId": null,
+        "trelloBoardId": null
+      }
+    },
+    "selectedProjectId": null
+  },
+  "diffTool": "git-config",
+  "repoInit": {
+    "lastRepoInitPath": "/home/alberth/src"
+  },
+  "projectGroupsFrecencyMetadata": {
+    "/home/alberth/src": {
+      "id": "project-group-/home/alberth/src",
+      "timestamps": [
+        1715709895465
+      ],
+      "total": 1
+    }
+  },
+  "hostingServiceFrecencyMetadata": {
+    "github": {
+      "id": "github",
+      "timestamps": [
+        1715709858223,
+        1715709895486
+      ],
+      "total": 2
+    }
   }
 }
