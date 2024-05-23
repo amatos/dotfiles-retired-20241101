@@ -1,0 +1,14 @@
+[Unit]
+Description=Unison Videos
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/unison Videos
+Restart=always
+RestartSec=15
+
+[Install]
+WantedBy=default.target
+
+
