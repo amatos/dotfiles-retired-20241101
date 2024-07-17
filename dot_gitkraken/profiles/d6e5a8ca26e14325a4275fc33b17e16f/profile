@@ -2,51 +2,31 @@
   "externalEditor": "Sublime Text",
   "tabInfo": {
     "permanentTabs": {
-      "PROJECTS": {
-        "selectedProject": null,
-        "closed": true
-      },
       "FOCUS_VIEW": {
         "closed": false
       },
       "REPO_MANAGEMENT": {}
     },
-    "selectedTabId": "2febd00d-9933-4473-a51d-516aa554e5a0",
+    "selectedTabId": "790215c6-a1e9-4e22-859c-4da8df5edb49",
     "tabs": [
       {
-        "id": "9974f240-66d2-4433-a1ae-ac733f4644d3",
-        "type": "REPO",
-        "repoName": "chezmoi",
-        "repoPath": "/home/alberth/.local/share/chezmoi/"
+        "id": "98f7f09c-bbc3-49b5-8991-56b5df8ba5e6",
+        "type": "RELEASE_NOTES"
       },
       {
-        "id": "2febd00d-9933-4473-a51d-516aa554e5a0",
+        "id": "790215c6-a1e9-4e22-859c-4da8df5edb49",
         "type": "REPO",
-        "repoName": "robot-recall",
-        "repoPath": "/home/alberth/src/robot-recall/",
-        "skipWSLChecks": false
-      },
-      {
-        "id": "0b6bba91-4399-4e8d-81a3-3211bc5d5ba6",
-        "type": "REPO",
-        "repoName": "dns-matos-cc",
-        "repoPath": "/home/alberth/src/dns-matos-cc/",
-        "skipWSLChecks": false
-      },
-      {
-        "id": "9305d7ea-ce21-44f5-95af-5493b18b363a",
-        "type": "REPO",
-        "repoName": "server_configs",
-        "repoPath": "/home/alberth/server_configs/",
+        "repoName": "ansible-archlinux",
+        "repoPath": "/home/alberth/src/ansible-archlinux/",
         "skipWSLChecks": false
       }
     ]
   },
   "editor": {
-    "fontFamily": "Consolas"
+    "fontFamily": "\"Liberation Mono\""
   },
   "cli": {
-    "fontFamily": "Consolas"
+    "fontFamily": "\"Liberation Mono\""
   },
   "organizationId": "62c0ff961da9a30051c8d6bb",
   "projects": {},
@@ -105,5 +85,8 @@
       ],
       "total": 2
     }
+  },
+  "fileView": {
+    "diffDisplayMode": "hunk"
   }
 }

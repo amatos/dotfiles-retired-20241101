@@ -10,7 +10,7 @@
         "setcustom": false,
         "setminimized": true,
         "setprofile": true,
-        "setserver": false,
+        "setserver": true,
         "setserverhost": false,
         "setserverport": false
     },
