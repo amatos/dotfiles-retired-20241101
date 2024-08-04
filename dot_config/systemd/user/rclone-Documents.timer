@@ -3,7 +3,7 @@ Description=rclone File Synchronization
 
 [Timer]
 OnBootSec=10m
-OnUnitActiveSec=10m
+OnUnitActiveSec=25m
 
 [Install]
 WantedBy=timers.target
