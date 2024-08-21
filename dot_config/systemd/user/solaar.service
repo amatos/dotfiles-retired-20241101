@@ -1,0 +1,12 @@
+[Unit]
+Description=Solaar headless
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/solaar -w hide
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
