@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/solaar -w hide
+ExecStart=/usr/bin/solaar -w hide --restart-on-wake-up
 Restart=always
 RestartSec=10
 
