@@ -10,10 +10,6 @@
     "selectedTabId": "790215c6-a1e9-4e22-859c-4da8df5edb49",
     "tabs": [
       {
-        "id": "98f7f09c-bbc3-49b5-8991-56b5df8ba5e6",
-        "type": "RELEASE_NOTES"
-      },
-      {
         "id": "790215c6-a1e9-4e22-859c-4da8df5edb49",
         "type": "REPO",
         "repoName": "ansible-archlinux",

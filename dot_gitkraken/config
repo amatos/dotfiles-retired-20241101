@@ -1,5 +1,5 @@
 {
-  "lastUpgradeScriptRun": "v10.1.0",
+  "lastUpgradeScriptRun": "v10.2.0",
   "appId": "3a51eaa9fa8a0d68825be6a38683615791ea68b5",
   "appLocale": "en-US",
   "appDateFormat": null,
@@ -19,7 +19,7 @@
     "createACommit": true
   },
   "sslWhitelist": [],
-  "lastReleaseNotesDisplayed": "10.1.0",
+  "lastReleaseNotesDisplayed": "10.2.0",
   "ui": {
     "shouldShowStartupPromoModal": false
   },
@@ -33,7 +33,7 @@
     "width": 2172,
     "height": 1107,
     "fullScreen": false,
-    "maximized": true
+    "maximized": false
   },
   "registration": {
     "EULA": {
@@ -79,9 +79,6 @@
       "name": "experimentalGitBinarySpawnServer961"
     },
     {
-      "name": "fall23PricingPromotion"
-    },
-    {
       "name": "gitBash"
     },
     {
@@ -91,13 +88,7 @@
       "name": "gkApi"
     },
     {
-      "name": "gkDotDevShowAccountPage"
-    },
-    {
-      "name": "gkDotDevShowCollaboratorSelect"
-    },
-    {
-      "name": "gkDotDevShowOrgSettingsPage"
+      "name": "gkDotDevNewPurchaseFlow"
     },
     {
       "name": "goldenTicketSpecial"
@@ -136,6 +127,13 @@
         "enabled": true,
         "createdAt": "2024-02-27T16:40:51.492581Z",
         "updatedAt": "2024-02-27T16:40:51.492581Z"
+      },
+      "ssoSettings": {
+        "enabled": false,
+        "enforced": false,
+        "provision": false,
+        "createdAt": "2024-02-27T16:40:51.491411Z",
+        "updatedAt": "2024-02-27T16:40:51.491411Z"
       }
     }
   },
@@ -184,5 +182,6 @@
         }
       }
     }
-  }
+  },
+  "gitBinaryEnabled": true
 }
