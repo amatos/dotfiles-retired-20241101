@@ -7,13 +7,20 @@
       },
       "REPO_MANAGEMENT": {}
     },
-    "selectedTabId": "790215c6-a1e9-4e22-859c-4da8df5edb49",
+    "selectedTabId": "e9cc43f5-6f4e-430c-81d5-55077f616ba9",
     "tabs": [
       {
         "id": "790215c6-a1e9-4e22-859c-4da8df5edb49",
         "type": "REPO",
         "repoName": "ansible-archlinux",
         "repoPath": "/home/alberth/src/ansible-archlinux/",
+        "skipWSLChecks": false
+      },
+      {
+        "id": "e9cc43f5-6f4e-430c-81d5-55077f616ba9",
+        "type": "REPO",
+        "repoName": "chezmoi",
+        "repoPath": "/home/alberth/.local/share/chezmoi/",
         "skipWSLChecks": false
       }
     ]
@@ -67,7 +74,7 @@
     "/home/alberth/src": {
       "id": "project-group-/home/alberth/src",
       "timestamps": [
-        1715709895465
+        1724770944693
       ],
       "total": 1
     }
@@ -77,9 +84,10 @@
       "id": "github",
       "timestamps": [
         1715709858223,
-        1715709895486
+        1715709895486,
+        1724770944716
       ],
-      "total": 2
+      "total": 3
     }
   },
   "fileView": {

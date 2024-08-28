@@ -16,7 +16,8 @@
     "connectIntegration": true,
     "firstLoginRegister": true,
     "startATrial": true,
-    "createACommit": true
+    "createACommit": true,
+    "makeABranch": true
   },
   "sslWhitelist": [],
   "lastReleaseNotesDisplayed": "10.2.0",
@@ -177,6 +178,20 @@
           "id": "openRepo-/home/alberth/src/ansible-archlinux",
           "timestamps": [
             1720193214855
+          ],
+          "total": 1
+        },
+        "openRepo-/home/alberth/src/age-op": {
+          "id": "openRepo-/home/alberth/src/age-op",
+          "timestamps": [
+            1724770947096
+          ],
+          "total": 1
+        },
+        "openRepo-/home/alberth/.local/share/chezmoi": {
+          "id": "openRepo-/home/alberth/.local/share/chezmoi",
+          "timestamps": [
+            1724886241584
           ],
           "total": 1
         }
