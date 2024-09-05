@@ -22,7 +22,8 @@
   "sslWhitelist": [],
   "lastReleaseNotesDisplayed": "10.2.0",
   "ui": {
-    "shouldShowStartupPromoModal": false
+    "shouldShowStartupPromoModal": false,
+    "wideLayout": true
   },
   "aliases": {
     "repo": {},
