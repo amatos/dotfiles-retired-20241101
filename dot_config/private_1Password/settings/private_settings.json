@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "browsers.extension.enabled": true,
+  "security.autolock.minutes": 60,
+  "security.authenticatedUnlock.enabled": true,
+  "developers.cliSharedLockState.enabled": true,
+  "sshAgent.storeKeyTitles": true,
+  "sshAgent.storeSshKeyTitlesResponseGiven": true,
+  "sshAgent.enabled": true,
+  "sshAgent.commitSigningBannerDismissed": true,
+  "app.trayAction": "quickAccess",
+  "authTags": {
+    "app.trayAction": "56nDElVp4lyVZKIw11eCQ2xY80dncFlzxPjrG1rGyM8",
+    "browsers.extension.enabled": "FJU5QoUi4aFTahTwxxPg3tMS1/tKqWMRHIgUGpi4S1E",
+    "developers.cliSharedLockState.enabled": "fanc/LrGasfdaHY4fFn778nrMzgwzKdZ/OJngUOGPKI",
+    "security.authenticatedUnlock.enabled": "0e08+/0GUKSGIQryq4szLDqSSSrEthuO6EgR1bD03d8",
+    "security.autolock.minutes": "ers5dDGv1NoVN97lelVAXB2GzAiWVWuNKj8C3AR32s4",
+    "sshAgent.commitSigningBannerDismissed": "GzLqx4Hda2y37HhRppjhaj2Ld8isw21kD80gvVFRX9c",
+    "sshAgent.enabled": "m9c6cPl0uNTDQVV0p086gKT4KHK1yOw09RKAXAYFv+A",
+    "sshAgent.storeKeyTitles": "3vMg8nkrJNq/zv7rnUJttRnvnjkdRmNHe87238T9ZDA",
+    "sshAgent.storeSshKeyTitlesResponseGiven": "+xBY2MxoaGNefA3qq+LDBcfJkzriC6eTK0x3J0KwZyo"
+  }
+}
