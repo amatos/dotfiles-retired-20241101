@@ -1,5 +1,5 @@
 {
-  "lastUpgradeScriptRun": "v10.2.0",
+  "lastUpgradeScriptRun": "v10.3.0",
   "appId": "3a51eaa9fa8a0d68825be6a38683615791ea68b5",
   "appLocale": "en-US",
   "appDateFormat": null,
@@ -17,10 +17,14 @@
     "firstLoginRegister": true,
     "startATrial": true,
     "createACommit": true,
-    "makeABranch": true
+    "makeABranch": true,
+    "firstTimeCommitSelected": true,
+    "leftPanelToggled": true,
+    "acknowledgedCommitDetailPanel": true,
+    "acknowledgedLeftPanel": true
   },
   "sslWhitelist": [],
-  "lastReleaseNotesDisplayed": "10.2.0",
+  "lastReleaseNotesDisplayed": "10.3.0",
   "ui": {
     "shouldShowStartupPromoModal": false,
     "wideLayout": true
@@ -30,8 +34,8 @@
     "tabs": {}
   },
   "windowSettings": {
-    "x": 902,
-    "y": 565,
+    "x": 1564,
+    "y": 711,
     "width": 2172,
     "height": 1107,
     "fullScreen": false,
@@ -93,6 +97,9 @@
       "name": "gkDotDevNewPurchaseFlow"
     },
     {
+      "name": "GKDotDevShowSsoSettings"
+    },
+    {
       "name": "goldenTicketSpecial"
     },
     {
@@ -136,7 +143,10 @@
         "provision": false,
         "createdAt": "2024-02-27T16:40:51.491411Z",
         "updatedAt": "2024-02-27T16:40:51.491411Z"
-      }
+      },
+      "memberInvitesRequireApproval": true,
+      "createdAt": "2024-02-27T16:40:51.491411Z",
+      "updatedAt": "2024-02-27T16:40:51.491411Z"
     }
   },
   "onboardingGuideDismissed": true,
@@ -157,42 +167,57 @@
           "id": "openRepo-/home/alberth/src/robot-recall",
           "timestamps": [
             1715709898109,
-            1715710062708
+            1715710062708,
+            1725657951544
           ],
-          "total": 2
+          "total": 3
         },
         "openRepo-/home/alberth/src/dns-matos-cc": {
           "id": "openRepo-/home/alberth/src/dns-matos-cc",
           "timestamps": [
-            1715709912407
+            1715709912407,
+            1725657914684,
+            1725658150715
           ],
-          "total": 1
+          "total": 3
         },
         "openRepo-/home/alberth/server_configs": {
           "id": "openRepo-/home/alberth/server_configs",
           "timestamps": [
-            1715709956786
+            1715709956786,
+            1725851186774
           ],
-          "total": 1
+          "total": 2
         },
         "openRepo-/home/alberth/src/ansible-archlinux": {
           "id": "openRepo-/home/alberth/src/ansible-archlinux",
           "timestamps": [
-            1720193214855
+            1720193214855,
+            1725658176553
           ],
-          "total": 1
+          "total": 2
         },
         "openRepo-/home/alberth/src/age-op": {
           "id": "openRepo-/home/alberth/src/age-op",
           "timestamps": [
-            1724770947096
+            1724770947096,
+            1725657882283,
+            1725658156310
           ],
-          "total": 1
+          "total": 3
         },
         "openRepo-/home/alberth/.local/share/chezmoi": {
           "id": "openRepo-/home/alberth/.local/share/chezmoi",
           "timestamps": [
-            1724886241584
+            1724886241584,
+            1725658183251
+          ],
+          "total": 2
+        },
+        "openRepo-/home/alberth/src/dotfiles": {
+          "id": "openRepo-/home/alberth/src/dotfiles",
+          "timestamps": [
+            1725657826175
           ],
           "total": 1
         }
