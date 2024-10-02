@@ -262,3 +262,7 @@ toggle do not disturb=none,,Toggle do not disturb
 
 [services][org.kde.konsole.desktop]
 NewWindow=Meta+Return
+
+[yakuake]
+_k_friendly_name=Yakuake
+toggle-window-state=F12,F12,Open/Retract Yakuake
