@@ -7,5 +7,5 @@ end
 
 # Enable Atuin
 if status is-interactive
-    atuin init fish | source
+    atuin init --disable-up-arrow fish | source
 end
