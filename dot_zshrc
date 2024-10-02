@@ -9,3 +9,5 @@ fi
 # Add starship
 eval "$(starship init zsh)"
 
+# Add Atuin
+eval "$(atuin init zsh)"
