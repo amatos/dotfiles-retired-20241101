@@ -34,10 +34,10 @@
     "tabs": {}
   },
   "windowSettings": {
-    "x": 1564,
-    "y": 711,
-    "width": 2172,
-    "height": 1107,
+    "x": 0,
+    "y": 64,
+    "width": 1920,
+    "height": 1016,
     "fullScreen": false,
     "maximized": false
   },
@@ -85,6 +85,9 @@
       "name": "experimentalGitBinarySpawnServer961"
     },
     {
+      "name": "fall2024SpecialPricing"
+    },
+    {
       "name": "gitBash"
     },
     {
@@ -94,7 +97,7 @@
       "name": "gkApi"
     },
     {
-      "name": "gkDotDevLaunchpadLabels"
+      "name": "gkDotDevInsights"
     },
     {
       "name": "gkDotDevNewPurchaseFlow"
@@ -224,6 +227,13 @@
           "id": "openRepo-/home/alberth/src/dotfiles",
           "timestamps": [
             1725657826175
+          ],
+          "total": 1
+        },
+        "openRepo-/home/alberth/src/x4-projects": {
+          "id": "openRepo-/home/alberth/src/x4-projects",
+          "timestamps": [
+            1727889024303
           ],
           "total": 1
         }

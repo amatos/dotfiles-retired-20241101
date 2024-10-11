@@ -7,7 +7,7 @@
       },
       "REPO_MANAGEMENT": {}
     },
-    "selectedTabId": "790215c6-a1e9-4e22-859c-4da8df5edb49",
+    "selectedTabId": "caf87c2b-3ddc-4745-85ea-aee7d230d9db",
     "tabs": [
       {
         "id": "790215c6-a1e9-4e22-859c-4da8df5edb49",
@@ -42,6 +42,13 @@
         "type": "REPO",
         "repoName": "dns-matos-cc",
         "repoPath": "/home/alberth/src/dns-matos-cc/"
+      },
+      {
+        "id": "caf87c2b-3ddc-4745-85ea-aee7d230d9db",
+        "type": "REPO",
+        "repoName": "x4-projects",
+        "repoPath": "/home/alberth/src/x4-projects/",
+        "skipWSLChecks": false
       }
     ]
   },
@@ -90,7 +97,7 @@
   "diffTool": "git-config",
   "repoInit": {
     "lastRepoInitPath": "/home/alberth/src",
-    "lastOpenedRepoPath": "/home/alberth/server_configs"
+    "lastOpenedRepoPath": "/home/alberth/src/x4-projects"
   },
   "projectGroupsFrecencyMetadata": {
     "/home/alberth/src": {
