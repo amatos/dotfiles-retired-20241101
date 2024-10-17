@@ -1,5 +1,5 @@
 {
-  "lastUpgradeScriptRun": "v10.3.0",
+  "lastUpgradeScriptRun": "v10.4.0",
   "appId": "3a51eaa9fa8a0d68825be6a38683615791ea68b5",
   "appLocale": "en-US",
   "appDateFormat": null,
@@ -24,7 +24,7 @@
     "acknowledgedLeftPanel": true
   },
   "sslWhitelist": [],
-  "lastReleaseNotesDisplayed": "10.3.0",
+  "lastReleaseNotesDisplayed": "10.4.0",
   "ui": {
     "shouldShowStartupPromoModal": false,
     "wideLayout": true
@@ -34,10 +34,10 @@
     "tabs": {}
   },
   "windowSettings": {
-    "x": 0,
-    "y": 64,
-    "width": 1920,
-    "height": 1016,
+    "x": 22,
+    "y": 39,
+    "width": 931,
+    "height": 503,
     "fullScreen": false,
     "maximized": false
   },
@@ -98,6 +98,9 @@
     },
     {
       "name": "gkDotDevInsights"
+    },
+    {
+      "name": "gkDotDevLaunchpadViewSettings"
     },
     {
       "name": "gkDotDevNewPurchaseFlow"
@@ -202,9 +205,10 @@
           "id": "openRepo-/home/alberth/src/ansible-archlinux",
           "timestamps": [
             1720193214855,
-            1725658176553
+            1725658176553,
+            1729130010274
           ],
-          "total": 2
+          "total": 3
         },
         "openRepo-/home/alberth/src/age-op": {
           "id": "openRepo-/home/alberth/src/age-op",
