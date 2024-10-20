@@ -247,30 +247,8 @@ fi
 
 # Hyprland
 if [ "$DESKTOP_SESSION" == "hyprland" ]; then
-    # Is the swww-daemon running?
-    #SWWW=$(pidof swww-daemon)
-    if [ -n "$(pidof swww-daemon)" ]; then
-        # swww img --transition-type=random "$WP"
-        # swww may spike a cpu core when using fancy transition effects on some systems. Therefore we can check the cpu usage and choose to not change
-        # wallpapers or use a less intensive transisiton type when doing so. This can be useful when the CPU is already under heavy load.
-        cpuUsage=$(ps -A -o %cpu | awk '{s+=$1} END {print s}')
-        cpuLimit=35.0
-
-        if (( $(echo "$cpuUsage > $cpuLimit" | bc -l) )); then
-            # option1 - High CPU usage.
-            swww img --resize fit --transition-type=none "$WP"
-        else
-            #option2 - Low CPU usage.
-            swww img --resize fit --transition-type=random "$WP"
-        fi
-    else
-        # See if SwayBG is running and nuke its last instance if it is.
-        old_swaybg=$(pgrep -f swaybg)
-        if [ -n "$old_swaybg" ]; then
-            killall swaybg &
-            swaybg -i "$WP" -m fit
-        fi
-    fi
+    hyprctl hyprpaper reload "$WP"
+    hyprctl hyprpaper wallpaper ", $WP"
 fi
 
 # trinity
