@@ -1,7 +1,0 @@
-#!/usr/bin/env fish
-
-{{ if lookPath "bat" -}}
-bat cache --build
-{{ else if lookPath "batcat" -}}
-batcat cache --build
-{{ end -}}
