@@ -12,7 +12,7 @@
   "buffer_font_family": "SFMono Nerd Font Mono",
   "theme": {
     "mode": "system",
-    "light": "Gruvbox Light Soft",
+    "light": "Gruvbox Dark",
     "dark": "Gruvbox Dark Soft"
   }
 }

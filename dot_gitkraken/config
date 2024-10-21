@@ -34,10 +34,10 @@
     "tabs": {}
   },
   "windowSettings": {
-    "x": 22,
-    "y": 39,
-    "width": 931,
-    "height": 503,
+    "x": 1928,
+    "y": 30,
+    "width": 1906,
+    "height": 2124,
     "fullScreen": false,
     "maximized": false
   },
@@ -238,6 +238,13 @@
           "id": "openRepo-/home/alberth/src/x4-projects",
           "timestamps": [
             1727889024303
+          ],
+          "total": 1
+        },
+        "openRepo-/home/alberth/ansible-archlinux": {
+          "id": "openRepo-/home/alberth/ansible-archlinux",
+          "timestamps": [
+            1729462353197
           ],
           "total": 1
         }

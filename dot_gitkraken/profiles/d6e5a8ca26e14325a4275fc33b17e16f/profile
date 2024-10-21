@@ -51,7 +51,7 @@
         "id": "37a68a28-7d26-4ff1-abd1-66de67da0d94",
         "type": "REPO",
         "repoName": "ansible-archlinux",
-        "repoPath": "/home/alberth/src/ansible-archlinux/",
+        "repoPath": "/home/alberth/ansible-archlinux/",
         "skipWSLChecks": false
       }
     ]
@@ -101,7 +101,7 @@
   "diffTool": "git-config",
   "repoInit": {
     "lastRepoInitPath": "/home/alberth/src",
-    "lastOpenedRepoPath": "/home/alberth/src/ansible-archlinux"
+    "lastOpenedRepoPath": "/home/alberth/ansible-archlinux"
   },
   "projectGroupsFrecencyMetadata": {
     "/home/alberth/src": {
