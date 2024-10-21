@@ -249,6 +249,7 @@ fi
 if [ "$DESKTOP_SESSION" == "hyprland" ]; then
     hyprctl hyprpaper reload "$WP"
     hyprctl hyprpaper wallpaper ", $WP"
+    magick "$WP" $HOME/Pictures/background.png
 fi
 
 # trinity
