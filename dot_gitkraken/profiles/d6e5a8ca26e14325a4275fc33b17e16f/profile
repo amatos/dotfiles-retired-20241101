@@ -32,7 +32,7 @@
   "userName": "Alberth Matos",
   "defaultTerminal": "konsole",
   "ui": {
-    "theme": "SYNC_WITH_SYSTEM",
+    "theme": "catppuccin-macchiato.jsonc",
     "repoManagementTab": {
       "collapsedSections": {
         "ALL_REPOS_SECTION": false,
