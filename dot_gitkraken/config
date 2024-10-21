@@ -34,10 +34,10 @@
     "tabs": {}
   },
   "windowSettings": {
-    "x": 1928,
-    "y": 30,
-    "width": 1906,
-    "height": 2124,
+    "x": 966,
+    "y": 68,
+    "width": 952,
+    "height": 1038,
     "fullScreen": false,
     "maximized": false
   },
@@ -206,9 +206,11 @@
           "timestamps": [
             1720193214855,
             1725658176553,
-            1729130010274
+            1729130010274,
+            1729520512789,
+            1729520587467
           ],
-          "total": 3
+          "total": 5
         },
         "openRepo-/home/alberth/src/age-op": {
           "id": "openRepo-/home/alberth/src/age-op",
