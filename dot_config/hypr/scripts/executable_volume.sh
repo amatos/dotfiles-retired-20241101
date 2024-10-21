@@ -23,7 +23,7 @@ get_icon() {
 # Notify
 notify_user() {
 	#notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$(get_icon)" "Volume : $(get_volume) %"
-	hyprctl notify 2000 "Volume: $(get_volume)"
+	hyprctl notify 1 2000 "Volume:\n $(get_volume)"
 }
 
 # Increase Volume
@@ -39,9 +39,9 @@ dec_volume() {
 # Toggle Mute
 toggle_mute() {
 	if [ "$(pamixer --get-mute)" == "false" ]; then
-		pamixer -m && hyprctl notify 1 2000 "Volume Switched OFF"
+		pamixer -m && hyprctl notify 1 2000 "Volume Muted"
 	elif [ "$(pamixer --get-mute)" == "true" ]; then
-		pamixer -u && hyprctl notify 1 2000 "Volume Switched ON"
+		pamixer -u && hyprctl notify 1 2000 "Volume Unmuted"
 	fi
 }
 
