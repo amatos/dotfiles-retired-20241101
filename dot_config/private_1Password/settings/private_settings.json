@@ -2,23 +2,24 @@
   "version": 1,
   "app.trayAction": "quickAccess",
   "browsers.extension.enabled": true,
-  "security.authenticatedUnlock.enabled": true,
+  "security.autolock.minutes": 60,
+  "developers.cliSharedLockState.enabled": true,
   "sshAgent.storeKeyTitles": true,
   "sshAgent.storeSshKeyTitlesResponseGiven": true,
   "sshAgent.enabled": true,
-  "developers.cliSharedLockState.enabled": true,
+  "security.authenticatedUnlock.enabled": true,
   "authTags": {
     "app.trayAction": "56nDElVp4lyVZKIw11eCQ2xY80dncFlzxPjrG1rGyM8",
-    "browsers.extension.enabled": "sgaIUc1ohZbLHFmkBGDiqYxMAhd6XbB3cO3+2QyXWHo",
-    "developers.cliSharedLockState.enabled": "wGhVuELiPON3u7rZD3r3W9xFGfGtEa8RWkVh2phbwKA",
+    "browsers.extension.enabled": "1sZBHRmHQkiy0f4iAg1U5TennJduwwijIJOsgUytg+c",
+    "developers.cliSharedLockState.enabled": "QBMaeD7LZMRrFXbw3jLJmrzHoJFpTrWMBHGcsKKPRVs",
     "passwordGenerator.separatorType": "FJlixiw0ie9CwPsP8hl0+CzYwEG/xx7J1BeHzN1CmAc",
     "passwordGenerator.size.words": "tVDkE+bM4aL/GdrUnh7oIWMZH3f7jnXrUxGrXAHtTp0",
     "passwordGenerator.type": "jCkSYd74RvGIyv4cu2zUZSxBOPAaLa1JTF3muMg3OGM",
-    "security.authenticatedUnlock.enabled": "0H4gGu4G/YWA/v9uKKCOCHvSEZpt3O65FN3CSE29Sdo",
-    "security.autolock.minutes": "ers5dDGv1NoVN97lelVAXB2GzAiWVWuNKj8C3AR32s4",
+    "security.authenticatedUnlock.enabled": "Qywe3FfdnMwgBf5EOE87l1By7Q0uTF+8yXBXj8xWsAk",
+    "security.autolock.minutes": "XHpUKVKeWy2dyrUvHukz1u+6huEj9cd96gZVLzFjReM",
     "sshAgent.commitSigningBannerDismissed": "GzLqx4Hda2y37HhRppjhaj2Ld8isw21kD80gvVFRX9c",
-    "sshAgent.enabled": "+Xy0vr57SdAMWfyWaxjNoU6tb1bcUVy488aiKWiIEe0",
-    "sshAgent.storeKeyTitles": "FE5KLdP7V4/tK0Ev9xTvtUo6EEjuyHlxTqU+JgobvpI",
-    "sshAgent.storeSshKeyTitlesResponseGiven": "IRu+BKVFkju6kHG/b0CcyCsQCvmBBvL4J0yP4fXVe4M"
+    "sshAgent.enabled": "yHWWPQteQBdbKI4n5XzJP1bwZ/M8wTcPXHK9rq6MY6M",
+    "sshAgent.storeKeyTitles": "Lkt5YAloxA0caenuQSWE/QFBCU08o9ltQEloze7Mq3k",
+    "sshAgent.storeSshKeyTitlesResponseGiven": "hte7S/5hmyTjR/cGpss8EiE6kWNEofjAlcVD8nvPUpM"
   }
 }
