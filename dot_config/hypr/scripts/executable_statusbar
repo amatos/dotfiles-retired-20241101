@@ -5,4 +5,7 @@ STYLE="$HOME/.config/hypr/waybar/style.css"
 
 if [[ ! $(pidof waybar) ]]; then
   waybar --log-level error --config ${CONFIG} --style ${STYLE}
+else
+  kill $(pidof waybar)
+  waybar --log-level error --config ${CONFIG} --style ${STYLE}
 fi
