@@ -8,15 +8,15 @@
     "format-icons": ["󰃞 ", "󰃝 ", "󰃟 ", "󰃠 "],
     "on-scroll-up": "~/.config/hypr/scripts/brightness --inc",
     "on-scroll-down": "~/.config/hypr/scripts/brightness --dec",
-    "smooth-scrolling-threshold": 1,
-    },
+    "smooth-scrolling-threshold": 1
+  },
 
   "hyprland/submap": {
     "format": "<span font='10' rise='1500'>󰘲 </span>{}",
     "max-length": 30,
     "tooltip": false
   },
-    
+
   "hyprland/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
@@ -41,10 +41,10 @@
     //"special-visible-only": true,
     "sort-by-number": true,
     "persistent-workspaces": {
-      "*": 9,
+      "*": 4
     },
     "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1"
   },
 
   "battery": {
@@ -78,51 +78,51 @@
     "timezone": "America/New_York",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
-                "mode"          : "year",
-                "mode-mon-col"  : 3,
-                "weeks-pos"     : "right",
-                "on-scroll"     : 1,
-                "format": {
-                          "months":     "<span color='#ffead3'><b>{}</b></span>",
-                          "days":       "<span color='#ecc6d9'><b>{}</b></span>",
-                          "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
-                          "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-                          "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
-                          }
-                },
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
     //"tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-    "on-click-right": "~/.config/hypr/scripts/changeHyprpaper",
+    "on-click-right": "~/.config/hypr/scripts/changeHyprpaper"
   },
 
   "cpu": {
     "interval": 5,
     "format": "<span font='10' rise='1500'> </span><span font='11'>{usage}%</span>",
     "format-alt": "<span font='10' rise='4000'>{icon0}{icon1}{icon2}{icon3}</span> <span font='11'rise='1000'>{usage:>2}%</span>",
-    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
   },
 
   "custom/menu": {
     "format": "<span font='11' rise='1000'>󰍜 </span>",
     "tooltip": false,
-    "on-click": "$HOME/.config/hypr/scripts/menu",
+    "on-click": "$HOME/.config/hypr/scripts/menu"
   },
 
   "custom/power": {
     "format": "<span font='10' rise='4000'> </span>",
     "tooltip": false,
-    "on-click": "~/.config/hypr/scripts/wleave.sh",
+    "on-click": "~/.config/hypr/scripts/wlogout.sh"
   },
 
   "disk": {
     "interval": 30,
     "format": "<span font='10' rise='1500'> </span>{free}",
-    "format-alt": "<span font='10' rise='1500'> </span>{percentage_free}%",
+    "format-alt": "<span font='10' rise='1500'> </span>{percentage_free}%"
   },
 
   "memory": {
     "interval": 10,
     "format": "<span font='10' rise='1500'> </span>{used:0.1f}G",
-    "format-alt": "<span font='10' rise='1500'> </span>{}%",
+    "format-alt": "<span font='10' rise='1500'> </span>{}%"
   },
 
   "network": {
@@ -135,7 +135,7 @@
     "format-alt": "<span font='11' rise='1000'> </span>{bandwidthUpBits} | <span font='11' rise='1000'> </span>{bandwidthDownBits}",
     "tooltip-format": "<span font='10' rise='1000'> </span>{ifname} {essid} via {gwaddr}",
     "on-click-middle": "~/.local/bin/mmuvpn up cbj",
-    "on-click-right": "kitty --class update -T update -1 -e nmtui",
+    "on-click-right": "kitty --class update -T update -1 -e nmtui"
   },
 
   "custom/weather": {
@@ -143,10 +143,10 @@
     "format": "{}",
     "interval": 300,
     "exec": "~/.config/hypr/scripts/wttr.py",
-    "return-type": "json",
+    "return-type": "json"
   },
 
-  "custom/updater":{
+  "custom/updater": {
     "format": "{}",
     "exec": "$HOME/.config/hypr/scripts/checkUpdate",
     "exec-if": "[[ $($HOME/.config/hypr/scripts/checkUpdate) ]]",
@@ -154,24 +154,24 @@
     "on-click": "kitty --class update -T update -e yay -Syu && notify-send -i '/usr/share/icons/hicolor/256x256/apps/kitty.png' 'Kitty Terminal' 'Nice!!!' "
   },
 
-  "custom/uptime":{
+  "custom/uptime": {
     "format": "<span font='12' rise='500'> </span>{}",
     "exec": "$HOME/.config/hypr/scripts/upt",
-    "interval": 60,
+    "interval": 60
   },
 
-  "custom/cycle_wall":{
-    "format":"",
+  "custom/cycle_wall": {
+    "format": "",
     "on-click": "~/.config/hypr/scripts/changeHyprpaper",
-    "tooltip-format": "Change wallpaper",
+    "tooltip-format": "Change wallpaper"
   },
 
-  "custom/vpn_check":{
-    "format":"<span font='10' rise='1000'>󱇲 </span>{}",
+  "custom/vpn_check": {
+    "format": "<span font='10' rise='1000'>󱇲 </span>{}",
     "exec": "~/.config/hypr/scripts/vpnCheck",
     "interval": 120,
     "on-click": "~/.local/bin/mmuvpn restart",
-    "on-click-right": "~/.local/bin/mmuvpn down",
+    "on-click-right": "~/.local/bin/mmuvpn down"
   },
 
   "wireplumber": {
@@ -197,13 +197,13 @@
     "on-click-middle": "pavucontrol",
     "on-scroll-up": "~/.config/hypr/scripts/volume --inc",
     "on-scroll-down": "~/.config/hypr/scripts/volume --dec",
-    "smooth-scrolling-threshold": 1,
+    "smooth-scrolling-threshold": 1
   },
 
-  "custom/cputemp":{
+  "custom/cputemp": {
     "format": "<span font='11' rise='1300'></span>{}",
     "exec": "~/.config/hypr/scripts/cputemp",
-    "interval": 15,
+    "interval": 15
   },
 
   "tray": {
@@ -221,7 +221,7 @@
     "format-icons": {
       "activated": "<span font='10' color='#f38ba8'>󰛐 </span>",
       "deactivated": "<span font='10'>󰛑 </span>"
-    },
+    }
     /* "timeout": 30.5 */
   },
 
@@ -238,6 +238,6 @@
     // The options below will go to next/previous track on scroll
     "on-scroll-up": "waybar-mpris --send next",
     "on-scroll-down": "waybar-mpris --send prev",
-    "escape": true,
-  },
+    "escape": true
+  }
 }

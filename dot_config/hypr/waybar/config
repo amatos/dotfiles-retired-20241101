@@ -1,5 +1,5 @@
 {
-  "include": "~/.config/hypr/waybar/modules",
+  "include": "~/.config/hypr/waybar/modules.json",
   "layer": "top",
   "exclusive": true,
   "passthrough": false,
@@ -7,11 +7,27 @@
   "fixed-center": false,
   "spacing": 3,
   "gtk-layer-shell": true,
-  "height": 32,
-  //"margin": 3,
-
-  "modules-left": ["hyprland/workspaces", "hyprland/submap", "cpu", "custom/cputemp", "memory", "disk", "custom/waybar-mpris"],
-  "modules-center": ["hyprland/window"],
-  "modules-right": ["idle_inhibitor", "custom/uptime", "backlight", "wireplumber", "custom/vpn_check", "network", "battery", "custom/updater", "tray", "clock", "custom/power"],
-
+  "reload_style_on_change": true,
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/submap",
+    "cpu",
+    "custom/cputemp",
+    "memory",
+    "disk",
+    "custom/waybar-mpris"
+  ],
+  "modules-center": ["hyprland/window", "clock"],
+  "modules-right": [
+    "idle_inhibitor",
+    "custom/uptime",
+    "backlight",
+    "wireplumber",
+    "custom/vpn_check",
+    "network",
+    "battery",
+    "custom/updater",
+    "tray",
+    "custom/power"
+  ]
 }
