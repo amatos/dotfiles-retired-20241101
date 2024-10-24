@@ -4,7 +4,7 @@
     "align": 0,
     "rotate": 0,
     "tooltip-format": "{percent}",
-    "format": "<span font='10' rise='1500'>{icon}</span>{percent}",
+    "format": "<span font='20' rise='1500'>{icon}</span>{percent}",
     "format-icons": ["󰃞 ", "󰃝 ", "󰃟 ", "󰃠 "],
     "on-scroll-up": "~/.config/hypr/scripts/brightness --inc",
     "on-scroll-down": "~/.config/hypr/scripts/brightness --dec",
@@ -12,7 +12,7 @@
   },
 
   "hyprland/submap": {
-    "format": "<span font='10' rise='1500'>󰘲 </span>{}",
+    "format": "<span font='20' rise='1500'>󰘲 </span>{}",
     "max-length": 30,
     "tooltip": false
   },
@@ -58,11 +58,11 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "<span font='10' rise='2000'>{icon}</span> {capacity}",
-    "format-charging": "<span font='10' rise='2000'>󰂄</span> {capacity}",
-    "format-plugged": "<span font='10' rise='2000'>󱐥</span> {capacity}",
-    "format-full": "<span font='10' rise='2000'>{icon}</span>",
-    "format-alt": "<span font='10' rise='2000'>{icon}</span>{time}",
+    "format": "<span font='20' rise='2000'>{icon}</span> {capacity}",
+    "format-charging": "<span font='20' rise='2000'>󰂄</span> {capacity}",
+    "format-plugged": "<span font='20' rise='2000'>󱐥</span> {capacity}",
+    "format-full": "<span font='20' rise='2000'>{icon}</span>",
+    "format-alt": "<span font='20' rise='2000'>{icon}</span>{time}",
     "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"],
     "format-time": "{H}h {M}min",
     "tooltip": true,
@@ -76,7 +76,7 @@
     "format": "{:%d %b <span rise='1000'>⁙</span> %I:%M %p}",
     "format-alt": "{:%A <span rise='1000'>⁙</span> %d %B %Y <span rise='1000'>⁙</span> %I:%M %p}",
     "timezone": "America/New_York",
-    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    //"tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "year",
       "mode-mon-col": 3,
@@ -90,50 +90,50 @@
         "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
       }
     },
-    //"tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-    "on-click-right": "~/.config/hypr/scripts/changeHyprpaper"
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+    // "on-click-right": "~/.config/hypr/scripts/changeHyprpaper"
   },
 
   "cpu": {
     "interval": 5,
-    "format": "<span font='10' rise='1500'> </span><span font='11'>{usage}%</span>",
-    "format-alt": "<span font='10' rise='4000'>{icon0}{icon1}{icon2}{icon3}</span> <span font='11'rise='1000'>{usage:>2}%</span>",
+    "format": "<span font='20' rise='1500'> </span><span font='20'>{usage}%</span>",
+    "format-alt": "<span font='20' rise='4000'>{icon0}{icon1}{icon2}{icon3}</span> <span font='20'rise='1000'>{usage:>2}%</span>",
     "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
   },
 
   "custom/menu": {
-    "format": "<span font='11' rise='1000'>󰍜 </span>",
+    "format": "<span font='20' rise='1000'>󰍜 </span>",
     "tooltip": false,
     "on-click": "$HOME/.config/hypr/scripts/menu"
   },
 
   "custom/power": {
-    "format": "<span font='10' rise='4000'> </span>",
+    "format": "<span font='20' rise='4000'> </span>",
     "tooltip": false,
-    "on-click": "~/.config/hypr/scripts/wlogout.sh"
+    "on-click": "wlogout -p layer-shell"
   },
 
   "disk": {
     "interval": 30,
-    "format": "<span font='10' rise='1500'> </span>{free}",
-    "format-alt": "<span font='10' rise='1500'> </span>{percentage_free}%"
+    "format": "<span font='20' rise='1500'> </span>{free} ",
+    "format-alt": "<span font='20' rise='1500'> </span>{percentage_free}%"
   },
 
   "memory": {
     "interval": 10,
-    "format": "<span font='10' rise='1500'> </span>{used:0.1f}G",
-    "format-alt": "<span font='10' rise='1500'> </span>{}%"
+    "format": "<span font='20' rise='1500'> </span>{used:0.1f}G ",
+    "format-alt": "<span font='20' rise='1500'> </span>{}%"
   },
 
   "network": {
     "interval": 5,
-    "format-wifi": "<span font='10' rise='2000'>󰖩 </span>{signalStrength}%",
-    "format-ethernet": "<span font='10' rise='1000'>󰈀 </span>{ipaddr}/{cidr}",
-    "format-linked": "<span font='10' rise='1000'>󰈀 </span>{ifname} (No IP)",
-    "format-disconnected": "<span font='10' rise='1000'>󱚵 </span>Disconnected",
-    "format-disabled": "<span font='10' rise='1000'>󰖪 </span>Disabled",
-    "format-alt": "<span font='11' rise='1000'> </span>{bandwidthUpBits} | <span font='11' rise='1000'> </span>{bandwidthDownBits}",
-    "tooltip-format": "<span font='10' rise='1000'> </span>{ifname} {essid} via {gwaddr}",
+    "format-wifi": "<span font='20' rise='2000'>󰖩 </span>{signalStrength}%",
+    "format-ethernet": "<span font='20' rise='1000'>󰈀 </span>{ipaddr}/{cidr}",
+    "format-linked": "<span font='20' rise='1000'>󰈀 </span>{ifname} (No IP)",
+    "format-disconnected": "<span font='20' rise='1000'>󱚵 </span>Disconnected",
+    "format-disabled": "<span font='20' rise='1000'>󰖪 </span>Disabled",
+    "format-alt": "<span font='20' rise='1000'> </span>{bandwidthUpBits} | <span font='20' rise='1000'> </span>{bandwidthDownBits}",
+    "tooltip-format": "<span font='20' rise='1000'> </span>{ifname} {essid} via {gwaddr}",
     "on-click-middle": "~/.local/bin/mmuvpn up cbj",
     "on-click-right": "kitty --class update -T update -1 -e nmtui"
   },
@@ -155,7 +155,7 @@
   },
 
   "custom/uptime": {
-    "format": "<span font='12' rise='500'> </span>{}",
+    "format": "<span font='20' rise='500'> </span>{}",
     "exec": "$HOME/.config/hypr/scripts/upt",
     "interval": 60
   },
@@ -167,7 +167,7 @@
   },
 
   "custom/vpn_check": {
-    "format": "<span font='10' rise='1000'>󱇲 </span>{}",
+    "format": "<span font='20' rise='1000'>󱇲 </span>{}",
     "exec": "~/.config/hypr/scripts/vpnCheck",
     "interval": 120,
     "on-click": "~/.local/bin/mmuvpn restart",
@@ -175,13 +175,13 @@
   },
 
   "wireplumber": {
-    "format": "<span font='10' rise='2000'>{icon}</span>{volume}",
+    "format": "<span font='20' rise='2000'>{icon}</span>{volume}",
     "tooltip-format": "{volume}",
-    "format-muted": "<span font='11' rise='1000'>󰝟 </span>",
-    "format-bluetooth": "<span font='11' rise='1000'>󰂰 </span>󰥰 {volume}{format_source}",
-    "format-bluetooth-muted": "<span font='11' rise='1000'>󰂲 </span>Mute",
-    "format-source": "<span font='11' rise='1000'>󰍬</span>{volume}",
-    "format-source-muted": "<span font='11' rise='1000'>󰍭 </span>",
+    "format-muted": "<span font='20' rise='1000'>󰝟 </span>",
+    "format-bluetooth": "<span font='20' rise='1000'>󰂰 </span>󰥰 {volume}{format_source}",
+    "format-bluetooth-muted": "<span font='20' rise='1000'>󰂲 </span>Mute",
+    "format-source": "<span font='20' rise='1000'>󰍬</span>{volume}",
+    "format-source-muted": "<span font='20' rise='1000'>󰍭 </span>",
     "format-icons": {
       "headphone": "󰋎 ",
       "hands-free": "",
@@ -201,14 +201,14 @@
   },
 
   "custom/cputemp": {
-    "format": "<span font='11' rise='1300'></span>{}",
+    "format": "<span font='20' rise='1300'></span>{}",
     "exec": "~/.config/hypr/scripts/cputemp",
     "interval": 15
   },
 
   "tray": {
     "spacing": 10,
-    "icon-size": 13
+    "icon-size": 20
   },
 
   "hyprland/window": {
@@ -219,8 +219,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": "<span font='10' color='#f38ba8'>󰛐 </span>",
-      "deactivated": "<span font='10'>󰛑 </span>"
+      "activated": "<span font='20' color='#f38ba8'>󰛐 </span>",
+      "deactivated": "<span font='20'>󰛑 </span>"
     }
     /* "timeout": 30.5 */
   },

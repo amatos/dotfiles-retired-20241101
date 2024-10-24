@@ -1,6 +1,5 @@
 night_light = { enabled = true, latitude = 41.4220, longitude = -82.3646, temperature = 3500 }
 
 vibrance_configs = [
-  { window_class = "firefox", window_title = "", strength = 100 },
-  { window_class = "mplayer2", window_title = "Video Player", strength = 100 },
+#  { window_class = "mplayer2", window_title = "Video Player", strength = 100 },
 ]

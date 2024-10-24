@@ -14,10 +14,9 @@
     "cpu",
     "custom/cputemp",
     "memory",
-    "disk",
-    "custom/waybar-mpris"
+    "disk"
   ],
-  "modules-center": ["hyprland/window", "clock"],
+  "modules-center": ["hyprland/window", "clock", "custom/weather"],
   "modules-right": [
     "idle_inhibitor",
     "custom/uptime",
