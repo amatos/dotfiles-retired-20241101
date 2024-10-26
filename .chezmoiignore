@@ -2,6 +2,7 @@ README.md
 LICENSE
 tags*
 **/*.src.ini
+**/.git
 
 {{- if ne .osid "linux-arch" }}
 .config/packages/arch*
