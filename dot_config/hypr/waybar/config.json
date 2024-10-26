@@ -18,15 +18,15 @@
   ],
   "modules-center": ["hyprland/window", "clock", "custom/weather"],
   "modules-right": [
+    "tray",
+    "custom/hyprmixer",
     "idle_inhibitor",
     "custom/uptime",
     "backlight",
     "wireplumber",
-    "custom/vpn_check",
     "network",
     "battery",
     "custom/updater",
-    "tray",
     "custom/power"
   ]
 }
