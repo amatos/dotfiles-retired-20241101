@@ -21,10 +21,11 @@
     "format": "{icon}",
     "on-click": "activate",
     "format-icons": {
-      // "1": " ",
+      "4": " ",
+      "5": " ",
+      // "1": " ",
       // "2": " ",
       // "3": " ",
-      // "4": " ",
       // "5": "󱃶 ",
       // "6": " ",
       // "7": "󰊻 ",
@@ -41,7 +42,7 @@
     //"special-visible-only": true,
     "sort-by-number": true,
     "persistent-workspaces": {
-      "*": 4
+      "*": 5
     },
     "on-scroll-up": "hyprctl dispatch workspace e+1",
     "on-scroll-down": "hyprctl dispatch workspace e-1"
@@ -73,7 +74,7 @@
     "interval": 60,
     "align": 0,
     "rotate": 0,
-    "format": "<span font='17'>{:%d %b</span><span font='20'>⁙</span><span font='17'>%I:%M %p}</span>",
+    "format": "<span font='17'>{:%d %b</span><span font='20'>⁙</span><span font='17'>%H:%M %p}</span>",
     "format-alt": "<span font='17'>{:%A⁙%d %B %Y⁙%I:%M %p}</span>",
     "timezone": "America/New_York",
     //"tooltip-format": "<tt><small>{calendar}</small></tt>",
@@ -240,20 +241,20 @@
     "on-scroll-down": "waybar-mpris --send prev",
     "escape": true
   },
-"custom/hyprmixer": {
-  "mpris": {
-          "format": "{player_icon}",
-          "format-paused": "{status_icon}",
-          "player-icons": {
-              "default": "\uf28b",
-              "mpv": "🎵"
-          },
-          "status-icons": {
-              "paused": "\uf144"
-          },
-          "on-click": "hyprmixer",
-          "max-length": 1000,
-          "interval": 1,
+  "custom/hyprmixer": {
+    "mpris": {
+      "format": "{player_icon}",
+      "format-paused": "{status_icon}",
+      "player-icons": {
+        "default": "\uf28b",
+        "mpv": "🎵"
       },
-}
+      "status-icons": {
+        "paused": "\uf144"
+      },
+      "on-click": "hyprmixer",
+      "max-length": 1000,
+      "interval": 1
+    }
+  }
 }
