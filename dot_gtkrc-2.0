@@ -1,12 +1,13 @@
 gtk-enable-animations=1
-gtk-theme-name="Breeze"
+gtk-theme-name="Catppuccin-Latte-Standard-Mauve-Light"
 gtk-primary-button-warps-slider=0
 gtk-toolbar-style=3
 gtk-menu-images=1
 gtk-button-images=1
 gtk-cursor-theme-size=24
-gtk-cursor-theme-name="breeze_cursors"
+gtk-cursor-theme-name="WhiteSur-cursors"
 gtk-sound-theme-name="ocean"
-gtk-icon-theme-name="breeze"
+gtk-icon-theme-name="breeze-dark"
 gtk-font-name="SF Pro Display,  11"
 
+gtk-modules=appmenu-gtk-module
