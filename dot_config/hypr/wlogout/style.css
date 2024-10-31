@@ -1,9 +1,11 @@
+@import "../themes/macchiato.css";
+
 window {
   font-family: SF Pro Display;
   font-size: 14pt;
-  color: #cdd6f4;
+  color: @subtext0;
   /* text */
-  background-color: rgba(30, 30, 46, 0.5);
+  background-color: @base;
   /* background-color: #1e1e2e; */
 }
 
@@ -12,20 +14,22 @@ button {
   background-position: center;
   background-size: 25%;
   border: none;
-  background-color: rgba(30, 30, 46, 0);
+  background-color: @surface0;
   margin: 5px;
+  color: @subtext0;
   transition:
     box-shadow 0.2s ease-in-out,
     background-color 0.2s ease-in-out;
 }
 
 button:hover {
-  background-color: rgba(49, 50, 68, 0.1);
+  background-color: @overlay2;
+  color: @crust;
 }
 
 button:focus {
-  background-color: #cba6f7;
-  color: #1e1e2e;
+  background-color: @overlay0;
+  color: @yellow;
 }
 
 #lock {
@@ -66,4 +70,12 @@ button:focus {
 
 #reboot:focus {
   background-image: image(url("icons/restart-hover.png"));
+}
+
+#hibernate {
+  background-image: image(url("icons/hibernate.png"));
+}
+
+#hibernate:focus {
+  background-image: image(url("icons/hibernate.png"));
 }
